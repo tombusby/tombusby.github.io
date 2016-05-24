@@ -430,6 +430,8 @@ pre {
           animation: fade-in-down 0.6s;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 @-webkit-keyframes fade-in-down {
   0% {
@@ -578,14 +580,15 @@ pre {
   margin-bottom: 2rem;
 }
 .post > .post-tags > .item {
-  padding: 3px 6px;
+  padding: 2px 8px;
   border-radius: 3px;
   font-size: 1.1rem;
   background: #ededed;
   color: #666;
   letter-spacing: 1px;
-  margin: 0 0.5rem;
+  margin: 3px 1px;
   text-decoration: none;
+  display: inline-block;
 }
 .post > h2,
 .post > h3,
@@ -596,6 +599,11 @@ pre {
 .post > h3 a,
 .post > h4 a {
   text-decoration: none;
+}
+.post > .title-image {
+  max-height: 120px;
+  display: block;
+  margin: 0 auto;
 }
 .tags {
   margin-top: 125px;
@@ -627,7 +635,7 @@ pre {
   margin-bottom: 6rem;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  padding: 3px 6px;
+  padding: 3px 9px;
   border-radius: 3px;
   font-size: 1.3rem;
   background: #ededed;
@@ -831,6 +839,8 @@ pre {
   display: block;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 99;
 }
 .header-home > .link > .selfie {
   width: 125px;
