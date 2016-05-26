@@ -72,14 +72,10 @@ sass:
 
 gems:
   - jemoji
-  - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
-
-jekyll-mentions:
-    base_url: https://github.com
 
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, indigo-gh-pages.zip, Rakefile, screen-shot.png, travis.sh, tasks]
