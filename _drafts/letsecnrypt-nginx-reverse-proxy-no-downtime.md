@@ -40,7 +40,7 @@ There are currently three modes you can use to obtain your certificate:
 2. `Webroot` - If you're not hosting your site with Apache, but have write access to the directory which serves as the web-root for the service, Certbot can drop some files in here and they'll be served up when Let's Encrypt comes knocking just as normal. Again, no interruption in service.
 3. `Standalone` - Certbot will directly listen on the required port. This obviously requires some down-time for whatever service is normally listening on that port.
 
-Unfortunately, a lot of the time when we're using nginx as a reverse proxy, it appears that we need to use Standalone. For example, if you're proxying a service that's running in a [Docker](https://www.docker.com) container, then you don't have access to the web-root.
+Unfortunately, a lot of the time when we're using nginx as a reverse proxy, it (at first) appears that we need to use Standalone. For example, if you're proxying a service that's running in a [Docker](https://www.docker.com) container, then you don't have access to the web-root.
 
 To make things worse, every time you need to renew the certificate for that one service, you need to stop nginx (severing the link to all other services too) so that Certbot can listen on those ports.
 
@@ -60,6 +60,7 @@ The first thing we need to do after SSHing into the instance is install nginx an
 sudo apt-get update && sudo apt-get install nginx -y
 wget -qO- https://get.docker.com/ | sh
 # The next command is optional, it allows you to run docker without sudo
+# Replace ubuntu with whatever your user is called
 sudo usermod -aG docker ubuntu
 {% endhighlight %}
 
@@ -76,7 +77,7 @@ It may take a little while for rancher to be downloaded and run. Once the previo
 sudo docker logs -f $cid
 {% endhighlight %}
 
-When you see `Connection established` in the logs, it should be ready and listening. Assuming you didn't change it, you can test that by calling port 8080. I'm my case that means navigating to [http://ssltest.busby.ninja:8080](http://ssltest.busby.ninja:8080).
+When you see `Connection established` in the logs, it should be ready and listening. Assuming you didn't change it, you can test that by calling port 8080. In my case that means navigating to [http://ssltest.busby.ninja:8080](http://ssltest.busby.ninja:8080).
 
 ## Basic nginx configuration
 
@@ -105,6 +106,8 @@ server {
     server_name ssltest.busby.ninja; # replace this with your domain
 
     location / {
+        # Some of these might not be required for other services
+        # proxy_pass is the most important
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-Port $server_port;
