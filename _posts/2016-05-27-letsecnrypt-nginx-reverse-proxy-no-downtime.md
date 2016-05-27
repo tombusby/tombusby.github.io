@@ -1,6 +1,7 @@
 ---
 title: "Let's Encrypt Auto-Renewal for Nginx Reverse Proxies"
 layout: post
+date: 2016-05-27 11:03
 tag:
 - letsencrypt
 - privacy
@@ -10,11 +11,11 @@ tag:
 blog: true
 ---
 
-##Motivation
+## Motivation
 
 _If you are familiar with using Nginx as a reverse proxy and have already used Let's Encrypt, skip to "[Provisioning a Server](#provisioning-a-server)"._
 
-####Nginx
+#### Nginx
 
 A very useful feature of [nginx](https://www.nginx.com) is that you can host multiple services on the same host and the same IP. For example, you could have a [Node.js](https://nodejs.org) application running on `localhost:8080`, a [Jenkins CI](https://jenkins.io) service running on `localhost:8088` and any other combination of web services written in various languages.
 
@@ -22,13 +23,13 @@ These local ports are not exposed to the pubic internet. Instead, nginx listens 
 
 In order to secure our connection with the client, HTTPS connections can be set up in the nginx configuration. The local services can safely serve plaintext HTTP since all connections are local.
 
-####Let's Encrypt
+#### Let's Encrypt
 
 [Let's Encrypt](https://letsencrypt.org) is a new certificate authority which aims to provide free, automated SSL certificates. All the major browsers have now added Let's Encrypt to their default list of trusted providers. This means that site operators who wanted to serve HTTPS but didn't want to pay for a certificate now can.
 
 This is actually very exciting for ordinary internet users' privacy and security!
 
-####Certbot
+#### Certbot
 
 Let's Encrypt provide an automated CLI tool to obtain certificates called [Certbot](https://github.com/certbot/certbot). Certbot proves to the Let's Encrypt certificate authority that you own the domain by simply listning on port 80/443 and having the certificate authority make a request.
 
