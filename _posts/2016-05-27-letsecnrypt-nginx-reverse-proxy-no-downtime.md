@@ -316,7 +316,7 @@ Once you've restarted nginx then you should confirm by navigating to your domain
 
 At this point, you're basically done. You have your reverse proxy set up with a valid SSL cert (at least until the certificate expires) and you can repeat this process to proxy as many other services as you like.
 
-##Automated renewal and revoking certificates
+## Automated renewal and revoking certificates
 
 In order to renew your certificates, you simply run the following:
 
