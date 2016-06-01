@@ -131,7 +131,7 @@ ln -sf ../sites-available/rancher
 sudo service nginx restart
 {% endhighlight %}
 
-If restarting nginx fails, then the logs are at `/var/log/nginx/error.log`. If it succeeds, you should now be able to navigate to your domain (in my case [http://ssltest.busby.ninja](http://ssltest.busby.ninja)) and see rancher load as if you'd accessed it directly. If you see the nginx default page again, try refershing, it may be the browser cache. You should also try accessing the server directly by IP (in my case [http://52.51.228.42](http://52.51.228.42)). If all has gone well you'll see a 403 Forbidden message.
+If restarting nginx fails, then the logs are at `/var/log/nginx/error.log`. If it succeeds, you should now be able to navigate to your domain (in my case [http://ssltest.busby.ninja](http://ssltest.busby.ninja)) and see rancher load as if you'd accessed it directly. If you see the nginx default page again, try refreshing, it may be the browser cache. You should also try accessing the server directly by IP (in my case [http://52.51.228.42](http://52.51.228.42)). If all has gone well you'll see a 403 Forbidden message.
 
 ## Setting up a web-root
 
