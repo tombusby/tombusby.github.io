@@ -53,7 +53,7 @@ For this example, I'm starting out by spinning up a fresh [Ubuntu](http://www.ub
 
 ## Setting up the services
 
-For this example, I'm going to use a [Rancher](http://rancher.com) server as my example service. I'm doing this precisely because it runs in the Docker container, so I can't use Certbot's Apache mode, and I don't have access to the service's web-root directory.
+For this example, I'm going to use a [Rancher](http://rancher.com) server as my example service. I'm doing this precisely because it runs in a Docker container, so I can't use Certbot's Apache mode, and I don't have access to the service's web-root directory.
 
 The first thing we need to do after SSHing into the instance is install nginx and docker:
 
