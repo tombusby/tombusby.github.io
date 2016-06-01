@@ -37,7 +37,7 @@ If you're trying to acquire a certificate for `newdomain.example.com` then Let's
 
 There are currently three modes you can use to obtain your certificate:
 
-1. `Apache` - Certbot is able to plug-in directly to the [Apache](https://httpd.apache.org) web server and allow Let's Encrypt to make their request without any down time for what's normally hosted there. This is an ideal solution for Apache users.
+1. `Apache` - Certbot is able to plug-in directly to the [Apache](https://httpd.apache.org) web server and allow Let's Encrypt to make their request without any down-time for what's normally hosted there. This is an ideal solution for Apache users.
 2. `Webroot` - If you're not hosting your site with Apache, but have write access to the directory which serves as the web-root for the service, Certbot can drop some files in here and they'll be served up when Let's Encrypt comes knocking just as normal. Again, no interruption in service.
 3. `Standalone` - Certbot will directly listen on the required port. This obviously requires some down-time for whatever service is normally listening on that port.
 
@@ -49,11 +49,11 @@ Fortunately, I'm going to show you a way around this. There is an easy way to se
 
 ## Provisioning a server
 
-For this example I'm starting out by spinning up a fresh [Ubuntu](http://www.ubuntu.com) instance on [Amazon EC2](https://aws.amazon.com) (t2.micro). I've assigned an Elastic IP and, to begin with, allowed all incoming traffic via its security group. I've also pointed `ssltest.busby.ninja` at the instance. I'll be including all installation commands so this tutorial can be followed exactly.
+For this example, I'm starting out by spinning up a fresh [Ubuntu](http://www.ubuntu.com) instance on [Amazon EC2](https://aws.amazon.com) (t2.micro). I've assigned an Elastic IP and, to begin with, allowed all incoming traffic via its security group. I've also pointed `ssltest.busby.ninja` at the instance. I'll be including all installation commands so this tutorial can be followed exactly.
 
 ## Setting up the services
 
-For this example I'm going to use a [Rancher](http://rancher.com) server as my example service. I'm doing this precisely because it runs in the Docker container, so I can't use Certbot's Apache mode, and I don't have access to the service's web root directory. 
+For this example, I'm going to use a [Rancher](http://rancher.com) server as my example service. I'm doing this precisely because it runs in the Docker container, so I can't use Certbot's Apache mode, and I don't have access to the service's web-root directory.
 
 The first thing we need to do after SSHing into the instance is install nginx and docker:
 
@@ -78,7 +78,7 @@ It may take a little while for rancher to be downloaded and run. Once the previo
 sudo docker logs -f $cid
 {% endhighlight %}
 
-When you see `Connection established` in the logs, it should be ready and listening. Assuming you didn't change it, you can test that by calling port 8080. In my case that means navigating to [http://ssltest.busby.ninja:8080](http://ssltest.busby.ninja:8080).
+When you see `Connection established` in the logs, it should be ready and listening. Assuming you didn't change it, you can test that by calling port 8080. In my case, that means navigating to [http://ssltest.busby.ninja:8080](http://ssltest.busby.ninja:8080).
 
 ## Basic nginx configuration
 
@@ -155,7 +155,7 @@ echo "nginx is awesome!" > /var/www/rancher-certbot-webroot/test.html
 chown -R ubuntu:ubuntu /var/www/rancher-certbot-webroot
 {% endhighlight %}
 
-Next we need to modify our nginx config:
+Next, we need to modify our nginx config:
 
 <p style="margin-bottom: 0; font-weight: bold"><code>/etc/nginx/sites-available/rancher</code></p>
 {% highlight nginx %}
@@ -193,11 +193,11 @@ server {
 }
 {% endhighlight %}
 
-Restart nginx and access /test.html ([http://ssltest.busby.ninja/test.html](http://ssltest.busby.ninja/test.html) for me). Should should see a message correctly stating how awesome nginx is. You should also check that other paths are still redirecting to rancher. If you're a clean-freak like me you'll probably want to delete test.html after confirming that everything is working. You can also log out of root for now.
+Restart nginx and access /test.html ([http://ssltest.busby.ninja/test.html](http://ssltest.busby.ninja/test.html) for me). You should see a message correctly stating how awesome nginx is. You should also check that other paths are still redirecting to rancher. If you're a clean-freak like me you'll probably want to delete test.html after confirming that everything is working. You can also log out of root for now.
 
 ## Acquiring an SSL certificate
 
-Next we'll need to get Certbot installed. Many of you might want to run it in its own user, and to get the latest version via github. I'm going to keep things simple and just directly download a stable version to the ubuntu user's home directory (and it also ensures hopefully the tutorial will still work in the medium-term future).
+Next, we'll need to get Certbot installed. Many of you might want to run it in its own user, and to get the latest version via GitHub. I'm going to keep things simple and just directly download a stable version to the ubuntu user's home directory (and it also ensures hopefully the tutorial will still work in the medium-term future).
 
 _**Important note**: If you're following along on a low power instance like the EC2 t2.micro that I'm using, the certbot install my cause errors. You just need to stop the rancher service while you do this segment since it's a bit of a memory hog. I realise that this defeats the purpose of using `webroot` instead of `standalone` but this is intended as a demonstration. On a more powerful machine, or with less demanding services, you won't have this issue. The commands to do this are below:_
 
