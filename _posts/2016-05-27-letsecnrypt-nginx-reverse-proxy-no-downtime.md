@@ -15,6 +15,8 @@ blog: true
 
 _If you are familiar with using Nginx as a reverse proxy and have already used Let's Encrypt, skip to "[Provisioning a Server](#provisioning-a-server)"._
 
+_2016-06-11 - Improved the nginx config based on a suggestion from [/u/nikomo](https://www.reddit.com/r/programming/comments/4m2avd/free_lets_encrypt_ssl_certs_howto_autorenewal_for/d3s85ur)_
+
 #### Nginx
 
 A very useful feature of [nginx](https://www.nginx.com) is that you can host multiple services on the same host and the same IP. For example, you could have a [Node.js](https://nodejs.org) application running on `localhost:8080`, a [Jenkins CI](https://jenkins.io) service running on `localhost:8088` and any other combination of web services written in various languages.
@@ -143,16 +145,16 @@ As discussed in the introduction, we will be using the Certbot tool that Let's E
 
 ...or can we.
 
-This is one of the ways in which nginx is really very cool. It's possible for us to configure a separate web-root in our `/etc/nginx/sites-available/rancher` file. When a request is made, nginx firstly checks to see if that path exists as a static file in the web-root directory we specified. If it exists, nginx acts like a regular web server and serves it. If that path doesn't exist in the web-root then the entire request is proxied over to rancher as normal.
+This is one of the ways in which nginx is really very cool. It's possible for us to configure a separate web-root in our `/etc/nginx/sites-available/rancher` file. When Let's Encrypt make the request, it expects to find the proof file located within the `/.well-known` subdirectory of the web-root. This is a relatively new [IETF standard](https://tools.ietf.org/html/rfc5785) to prevent things like favicon.ico and other things cluttering the web-root.
+
+As such we can recognise paths beginning with `/.well-known` as SSL proof requests and serve it up correctly. A previous version of this blog post used a solution that required checking the file system to see if the path existed for every request. If no file was found in the web-root it was proxied. This avoids that overhead: we only do web-root file system checks for requests beginning with `/.well-known`.
 
 Firstly let's create the webroot (I'm assuming you're still root here):
 
 {% highlight shell %}
-mkdir -p /var/www/rancher-certbot-webroot
+mkdir -p /var/www/ssl-proof/rancher/.well-known
 # Create file we'll use later to test 
-echo "nginx is awesome!" > /var/www/rancher-certbot-webroot/test.html
-# Set the ownership of the directory to be the user you'll run certbot as
-chown -R ubuntu:ubuntu /var/www/rancher-certbot-webroot
+echo "nginx is awesome!" > /var/www/ssl-proof/rancher/.well-known/test.html
 {% endhighlight %}
 
 Next, we need to modify our nginx config:
@@ -170,10 +172,15 @@ server {
 
     server_name ssltest.busby.ninja; # replace this with your domain
 
-    # Here we define the web-root
-    root /var/www/rancher-certbot-webroot;
+    # Here we define the web-root for our SSL proof
+    location /.well-known {
+        # Note that a request for /.well-known/test.html will
+        # look for /var/www/ssl-proof/rancher/.well-known/test.html
+        # and not /var/www/ssl-proof/rancher/test.html
+        root /var/www/ssl-proof/rancher/;
+    }
 
-    location @proxy {
+    location / {
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-Port $server_port;
@@ -184,16 +191,10 @@ server {
         proxy_set_header Connection "upgrade";
         proxy_read_timeout 900s;
     }
-
-    location / {
-        # This line looks for the request path in webroot
-        # If it fails, it uses @proxy (defined above)
-        try_files $uri @proxy;
-    }
 }
 {% endhighlight %}
 
-Restart nginx and access /test.html ([http://ssltest.busby.ninja/test.html](http://ssltest.busby.ninja/test.html) for me). You should see a message correctly stating how awesome nginx is. You should also check that other paths are still redirecting to rancher. If you're a clean-freak like me you'll probably want to delete test.html after confirming that everything is working. You can also log out of root for now.
+Restart nginx and access /.well-known/test.html ([http://ssltest.busby.ninja/.well-known/test.html](http://ssltest.busby.ninja/.well-known/test.html) for me). You should see a message correctly stating how awesome nginx is. You should also check that other paths are still redirecting to rancher. If you're a clean-freak like me you'll probably want to delete test.html after confirming that everything is working. You can also log out of root for now.
 
 ## Acquiring an SSL certificate
 
@@ -233,7 +234,7 @@ Now we get to the important part: actually requesting the certificate!
 {% highlight shell %}
 # Change the webroot and the domain to your own values if needed
 ./certbot-auto certonly --webroot \
-    -w /var/www/rancher-certbot-webroot \
+    -w /var/www/ssl-proof/rancher/ \
     -d ssltest.busby.ninja
 {% endhighlight %}
 
@@ -292,7 +293,11 @@ server {
     ssl_certificate /etc/letsencrypt/live/ssltest.busby.ninja/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/ssltest.busby.ninja/privkey.pem;
 
-    location @proxy {
+    location /.well-known {
+        root /var/www/ssl-proof/rancher/;
+    }
+
+    location / {
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-Port $server_port;
@@ -302,10 +307,6 @@ server {
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
         proxy_read_timeout 900s;
-    }
-
-    location / {
-        try_files $uri @proxy;
     }
 }
 {% endhighlight %}
