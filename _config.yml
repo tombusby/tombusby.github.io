@@ -2,18 +2,24 @@
 name: Tom Busby
 bio: 'Programmer, living in Poland, former skydiver'
 
+# twitter summary info
+description: A man who writes about computing stuff
+
 # if it's an external image, update below for true
 # better with square images
 external-image: false
 picture: 'assets/images/head-down.png'
 
-url: 
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: false
+resume-external:
+resume-url:
+
+url:
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
-
-markdown: kramdown
-highlighter: rouge
 
 # To enable google analytics, supply your token below
 analytics-google: 'UA-77476019-1'
@@ -22,8 +28,10 @@ analytics-google: 'UA-77476019-1'
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
-# if you don't want comments in your posts, set to false
-disqus: tombusbys
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: tombusbys # enter this from your disqus account
+  categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
@@ -38,6 +46,17 @@ github: tombusby
 medium: thomasbusby
 vimeo: skydivebusby
 email: tom@busby.ninja
+stackoverflow: 786580/tom-busby
+# quora: userquora
+reddit: tombusby
+
+authors:
+    tombusby:
+        name: Thomas Busby
+        bio: I write about computing stuff
+        external-image: false
+        picture: assets/images/head-down.png
+        twitter: _tombusby
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -64,8 +83,8 @@ show-tags: true
 # related posts inside a post?
 related: true
 
-# show next & prev links in blog post?
-blog-nav-links: false
+# Display links for next and previous posts for the specified categories
+post-advance-links: [blog]
 
 # show author block at the end of a post ?
 show-author: true
@@ -73,16 +92,9 @@ show-author: true
 # do you want some animations?
 animation: true
 
-sass:
-    sass_dir: _sass
-    style: :compressed
-
 gems:
   - jemoji
   - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-gist
-  - jekyll-paginate
 
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, indigo-gh-pages.zip, Rakefile, screen-shot.png, travis.sh, tasks]
