@@ -16,8 +16,7 @@ resume: false
 resume-external:
 resume-url:
 
-url:
-# your url: http://USERNAME.github.io
+url: http://tom.busby.ninja
 
 permalink: /:title/
 
