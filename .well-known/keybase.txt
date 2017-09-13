@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/tombusby
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://tom.busby.ninja
+  * I am tombusby (https://keybase.io/tombusby) on keybase.
+  * I have a public key ASA3mlmKDkAYYwdtusGavupuudIx2Fwn7ztlXfenu-CKkQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120379a598a0e401863076dbac19abeea6eb9d231d85c27ef3b655df7a7bbe08a910a",
+      "host": "keybase.io",
+      "kid": "0120379a598a0e401863076dbac19abeea6eb9d231d85c27ef3b655df7a7bbe08a910a",
+      "uid": "05a12e386509fbe2ecb61652477bf819",
+      "username": "tombusby"
+    },
+    "merkle_root": {
+      "ctime": 1505306908,
+      "hash": "d4f900f1c8156b24ec68e2e12a7974b6dc4c95443ceedf56adaf79bc527e33e125cf8e820072fda23db6596480ef2b2f81fccc58c19bcbb4f19f18084c5f1c87",
+      "hash_meta": "3088c8f3a84dedb8400a18adb0e02e0b27d6ce660a1b97bc5b5976976e306a38",
+      "seqno": 1384398
+    },
+    "service": {
+      "hostname": "tom.busby.ninja",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.29"
+  },
+  "ctime": 1505306939,
+  "expire_in": 504576000,
+  "prev": "c10c4a1ba472fb5491b4c1e23bd9f698ef5eed60c28ec247d73097d783747fd6",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgN5pZig5AGGMHbbrBmr7qbrnSMdhcJ+87ZV33p7vgipEKp3BheWxvYWTFA0d7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMzc5YTU5OGEwZTQwMTg2MzA3NmRiYWMxOWFiZWVhNmViOWQyMzFkODVjMjdlZjNiNjU1ZGY3YTdiYmUwOGE5MTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzc5YTU5OGEwZTQwMTg2MzA3NmRiYWMxOWFiZWVhNmViOWQyMzFkODVjMjdlZjNiNjU1ZGY3YTdiYmUwOGE5MTBhIiwidWlkIjoiMDVhMTJlMzg2NTA5ZmJlMmVjYjYxNjUyNDc3YmY4MTkiLCJ1c2VybmFtZSI6InRvbWJ1c2J5In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA1MzA2OTA4LCJoYXNoIjoiZDRmOTAwZjFjODE1NmIyNGVjNjhlMmUxMmE3OTc0YjZkYzRjOTU0NDNjZWVkZjU2YWRhZjc5YmM1MjdlMzNlMTI1Y2Y4ZTgyMDA3MmZkYTIzZGI2NTk2NDgwZWYyYjJmODFmY2NjNThjMTliY2JiNGYxOWYxODA4NGM1ZjFjODciLCJoYXNoX21ldGEiOiIzMDg4YzhmM2E4NGRlZGI4NDAwYTE4YWRiMGUwMmUwYjI3ZDZjZTY2MGExYjk3YmM1YjU5NzY5NzZlMzA2YTM4Iiwic2Vxbm8iOjEzODQzOTh9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoidG9tLmJ1c2J5Lm5pbmphIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yOSJ9LCJjdGltZSI6MTUwNTMwNjkzOSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJjMTBjNGExYmE0NzJmYjU0OTFiNGMxZTIzYmQ5ZjY5OGVmNWVlZDYwYzI4ZWMyNDdkNzMwOTdkNzgzNzQ3ZmQ2Iiwic2Vxbm8iOjEwLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQO4Ja5Cow0VuiBpyY+MPB/Qj62RSmwRf3RiStGOezQ9L8cX00Vf8vC+Rdk6jVC8K1gEi8Chg16C414DUprQv7AWoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDRqPLxQaymMQCX5+Osj6LFcbYFxKxrrGXmAxs+JAncTqN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tombusby
+
+==================================================================
