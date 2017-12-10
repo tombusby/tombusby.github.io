@@ -48,3 +48,4 @@ As such, I have decided to create a comprehensive solution set to all problems i
 
 + Chapter 1 - Introduction to Cryptography and Data Security
   + [Ex 1.1 - Breaking a Substitution Cipher](https://crypto.stackexchange.com/questions/53837/understanding-cryptography-by-christof-paar-and-jan-pelzl-problems-and-solutio)
+  + [Ex 1.2 - Breaking a Caesar Cipher](https://crypto.stackexchange.com/questions/53846/understanding-cryptography-by-christof-paar-and-jan-pelzl-problems-and-solutio)
