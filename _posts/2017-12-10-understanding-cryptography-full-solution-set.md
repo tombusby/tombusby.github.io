@@ -42,10 +42,10 @@ During my self-study on the topic of cryptography, I've found that the textbook 
 
 There is a solution manual freely available from the website called [Solutions for Odd-Numbered Questions](http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf), however the even numbered questions are unavailable. I have contacted the authors, but licensing restrictions prevent them providing the full manual to anyone except instructors in educational institutions. It does not appear that anyone has leaked the manual to the internet either.
 
-As such, I have decided to create a comprehensive solution set to all problems in the book in the form of questions and answers on [crypto.stackexchange.com](https://crypto.stackexchange.com). I will use this page as an index to the full set of questions and answers. If an answer has a green tick next to it, I have confirmed its correctness, or have a high degree of confidence in the answer. I am using Stack Exchange to many it easier for others to participate in checking/providing answers.
+As such, I have decided to create a comprehensive solution set to all problems in the book.
 
 ## List of Questions and Answers
 
 + Chapter 1 - Introduction to Cryptography and Data Security
-  + [Ex 1.1 - Breaking a Substitution Cipher](https://crypto.stackexchange.com/questions/53837/understanding-cryptography-by-christof-paar-and-jan-pelzl-problems-and-solutio)
-  + [Ex 1.2 - Breaking a Caesar Cipher](https://crypto.stackexchange.com/questions/53846/understanding-cryptography-by-christof-paar-and-jan-pelzl-problems-and-solutio)
+  + Ex 1.1 - Breaking a Substitution Cipher
+  + Ex 1.2 - Breaking a Caesar Cipher
