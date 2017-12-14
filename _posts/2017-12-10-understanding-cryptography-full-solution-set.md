@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - All Problems and Solutions"
-description: "An index of posts on crypto.stackexchange.com which provides a full list of problem/exercise solutions, including even-numbered questions."
+description: "An set of posts which provides a full list of problem/exercise solutions to the exercises in Understanding Cryptography including even-numbered questions."
 layout: post
 headerImage: false
 projects: true
@@ -9,7 +9,6 @@ tag:
 - cryptography
 - understanding-cryptography
 - even-numbered-solutions
-- stackexchange
 blog: false
 author: tombusby
 category: project
@@ -46,6 +45,6 @@ As such, I have decided to create a comprehensive solution set to all problems i
 
 ## List of Questions and Answers
 
-+ Chapter 1 - Introduction to Cryptography and Data Security
-  + Ex 1.1 - Breaking a Substitution Cipher
-  + Ex 1.2 - Breaking a Caesar Cipher
++ Chapter 1 - [Introduction to Cryptography and Data Security](/understanding-cryptography-chapter-1)
+  + Ex 1.1 - [Breaking a Substitution Cipher by Frequency Analysis](/understanding-cryptography-chapter-1#exercise-11)
+  + Ex 1.2 - [Breaking a Caesar/Shift Cipher by Frequency Analysis](/understanding-cryptography-chapter-1#exercise-12)
