@@ -36,7 +36,7 @@ wb wi kjb mk rmit bmiq bj rashmwk rmvp yjeryrkb mkd wbi iwokwxwvmkvr mkd ijyr yn
 
 ### Solution
 
-*This solution is verified as correct by the official [Solutions for Odd-Numbered Questions](http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf) manual.*
+*This solution is verified as correct by the official [Solutions for Odd-Numbered Questions][solution-manual] manual.*
 
 1\. Tallying up the letter frequencies produces the table below:
 
@@ -186,3 +186,28 @@ if __name__ == "__main__":
     statistical_attack(ciphertext)
     print "Q1.2.2 Answer: This was said by Tecumseh\n"
 {% endhighlight %}
+
+## Exercise 1.3
+
+We consider the long-term security of the Advanced Encryption Standard
+(AES) with a key length of 128-bit with respect to exhaustive key-search attacks.
+
+AES is perhaps the most widely used symmetric cipher at this time.
+
+1. Assume that an attacker has a special purpose application specific integrated circuit (ASIC) which checks 5 · 108 keys per second, and she has a budget of $1 million. One ASIC costs $50, and we assume 100% overhead for integrating the ASIC (manufacturing the printed circuit boards, power supply, cooling, etc.). How many ASICs can we run in parallel with the given budget? How long does an average key search take? Relate this time to the age of the Universe, which is about 1010 years.
+2. We try now to take advances in computer technology into account. Predicting
+the future tends to be tricky but the estimate usually applied is Moore’s Law,
+which states that the computer power doubles every 18 months while the costs
+of integrated circuits stay constant. How many years do we have to wait until a
+key-search machine can be built for breaking AES with 128 bit with an average
+search time of 24 hours? Again, assume a budget of $1 million (do not take
+inflation into account).
+
+### Solution
+
+*This solution is verified as correct by the official [Solutions for Odd-Numbered Questions][solution-manual] manual.*
+
+
+
+
+[solution-manual]: (http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf)

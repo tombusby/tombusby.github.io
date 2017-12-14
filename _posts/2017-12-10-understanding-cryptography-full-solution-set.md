@@ -48,3 +48,4 @@ As such, I have decided to create a comprehensive solution set to all problems i
 + Chapter 1 - [Introduction to Cryptography and Data Security](/understanding-cryptography-chapter-1)
   + Ex 1.1 - [Breaking a Substitution Cipher by Frequency Analysis](/understanding-cryptography-chapter-1#exercise-11)
   + Ex 1.2 - [Breaking a Caesar/Shift Cipher by Frequency Analysis](/understanding-cryptography-chapter-1#exercise-12)
+  + Ex 1.3 - [Calculating the Length of Brute-Force Attacks against AES](/understanding-cryptography-chapter-1#exercise-13)
