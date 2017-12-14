@@ -122,8 +122,6 @@ with open("ex1.1-ciphertext.txt") as f:
 
 ## Exercise 1.2
 
-*This solution is verified as correct by the fact that it produces sensible output.*
-
 We received the following ciphertext which was encoded with a shift cipher:
 
 <pre class="pre-wrap-enabled">
@@ -134,6 +132,8 @@ xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpitghlxiwiwtxgqadds.
 2. Who wrote this message?
 
 ### Solution
+
+*This solution is verified as correct by the fact that it produces sensible output.*
 
 1\. It's worth noting that shift ciphers have a keyspace of 25 (a mapping of 26 does not encrypt) and this is small enough for brute force. If we wish to perform an analytical attack, we need only identify one letter. This will yield the shift value, which makes up the entirety of the key. In my attack I used the letter E since the frequency gap between "most common" amd "second most common" is very stastically significant. This attack yielded the following result:
 
