@@ -187,6 +187,8 @@ if __name__ == "__main__":
     print "Q1.2.2 Answer: This was said by Tecumseh\n"
 {% endhighlight %}
 
+---
+
 ## Exercise 1.3
 
 We consider the long-term security of the Advanced Encryption Standard
@@ -194,20 +196,47 @@ We consider the long-term security of the Advanced Encryption Standard
 
 AES is perhaps the most widely used symmetric cipher at this time.
 
-1. Assume that an attacker has a special purpose application specific integrated circuit (ASIC) which checks 5 · 108 keys per second, and she has a budget of $1 million. One ASIC costs $50, and we assume 100% overhead for integrating the ASIC (manufacturing the printed circuit boards, power supply, cooling, etc.). How many ASICs can we run in parallel with the given budget? How long does an average key search take? Relate this time to the age of the Universe, which is about 1010 years.
-2. We try now to take advances in computer technology into account. Predicting
-the future tends to be tricky but the estimate usually applied is Moore’s Law,
-which states that the computer power doubles every 18 months while the costs
-of integrated circuits stay constant. How many years do we have to wait until a
-key-search machine can be built for breaking AES with 128 bit with an average
-search time of 24 hours? Again, assume a budget of $1 million (do not take
-inflation into account).
+1. Assume that an attacker has a special purpose application specific integrated circuit (ASIC) which checks $5 \times 10^8$ keys per second, and she has a budget of $1 million. One ASIC costs $50, and we assume 100% overhead for integrating the ASIC (manufacturing the printed circuit boards, power supply, cooling, etc.). How many ASICs can we run in parallel with the given budget? How long does an average key search take? Relate this time to the age of the Universe, which is about 1010 years.
+2. We try now to take advances in computer technology into account. Predicting the future tends to be tricky but the estimate usually applied is Moore’s Law, which states that the computer power doubles every 18 months while the costs of integrated circuits stay constant. How many years do we have to wait until a key-search machine can be built for breaking AES with 128 bit with an average search time of 24 hours? Again, assume a budget of $1 million (do not take inflation into account).
 
 ### Solution
 
 *This solution is verified as correct by the official [Solutions for Odd-Numbered Questions][solution-manual] manual.*
 
+1\. By the numbers specified, each machine costs \$100.
 
+<div style="text-align: center;">
+$$ $1,000,000 \div $100 = 10,000\,\mathsf{machines} $$.
+</div>
 
+Each of our 10,000 machines checks $5 \times 10^8$ keys per second, so we can calculate the speed of our parallelised machines as:
 
-[solution-manual]: (http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf)
+<div style="text-align: center;">
+$$ 5 \times 10^8 \times 10^4 = 5 \times 10^{12}\,\mathsf{keys/second} $$
+</div>
+
+On average, we'll find the correct key halfway through our search of the keyspace ($$2^{128}$$), so the average case will be $$2^{127}$$ checks.
+
+To calculate the length of time to find a key in the average case:
+
+<div style="text-align: center;">
+$$ \frac{2^{127}\,\mathsf{keys}}{5 \times 10^{12}\,\mathsf{keys/second}} = 3.4 \times 10^{25}\,\mathsf{seconds} = 1.08 \times 10^{18}\,\mathsf{years} $$
+</div>
+
+This is approximately $$10^8$$ times longer than the elapsed age of the universe.
+
+2\. If we represent the number of Moore's Law iterations to bring the using $$i$$ then we can express the equation as:
+
+$$ 1.08 \times 10^{18}\,\mathsf{years} \times \frac{365}{2^i} = 1\,\mathsf{day} $$
+
+We can rearrange this equation to make $$2^i$$ the only item on the left:
+
+$$ 2^i = 1.08 \times 10^{18} \times 365\,\mathsf{days} $$
+
+The reveals a value of $$i$$ which is roughly $$68.42$$.
+
+Rounding the number of iterations to 69 allows us to calculate the number of years:
+
+$$ 1.5\,\mathsf{years} \times 69\,\mathsf{iterations} = 103.5\,\mathsf{years} $$
+
+[solution-manual]: http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf
