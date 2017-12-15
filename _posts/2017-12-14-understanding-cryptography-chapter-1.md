@@ -16,7 +16,11 @@ category: none
 externalLink: false
 ---
 
-[Return to index](/understanding-cryptography-full-solution-set/)
+* [Return to index](/understanding-cryptography-full-solution-set/)
+* [Exercise 1.1](#exercise-11)
+* [Exercise 1.2](#exercise-12)
+* [Exercise 1.3](#exercise-13)
+* [Exercise 1.4](#exercise-14)
 
 ## Exercise 1.1
 
