@@ -21,6 +21,8 @@ externalLink: false
 * [Exercise 1.2](#exercise-12)
 * [Exercise 1.3](#exercise-13)
 * [Exercise 1.4](#exercise-14)
+* [Exercise 1.5](#exercise-15)
+* [Exercise 1.6](#exercise-16)
 
 ## Exercise 1.1
 
