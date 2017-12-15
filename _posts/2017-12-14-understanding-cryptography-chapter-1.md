@@ -12,7 +12,7 @@ tag:
 - even-numbered-solutions
 blog: false
 author: tombusby
-category: none
+category: chapter
 externalLink: false
 ---
 
@@ -255,8 +255,6 @@ Rounding the number of iterations to 69 allows us to calculate the number of yea
 $$ 1.5\,\mathsf{years} \times 69\,\mathsf{iterations} = 103.5\,\mathsf{years} $$
 </div>
 
-[solution-manual]: http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf
-
 ---
 
 ## Exercise 1.4
@@ -313,3 +311,96 @@ If we take the powers of two and do $$log_2$$ on both sides, we can solve this e
 <div style="text-align: center;">
 $$ 7i = 128 \\ i = 128 \div 7 \\ i \approx 18.285\,\mathsf{ASCII\,characters} $$
 </div>
+
+---
+
+## Exercise 1.5
+
+As we learned in this chapter, modular arithmetic is the basis of many cryptosystems. As a consequence, we will address this topic with several problems in this and upcoming chapters.
+
+Compute the result without a calculator:
+
+1. 15 · 29 mod 13
+2. 2 · 29 mod 13
+3. 2 · 3 mod 13
+4. −11 · 3 mod 13
+
+The results should be given in the range from 0,1,..., modulus-1. Briefly describe the relation between the different parts of the problem.
+
+### Solution
+
+*This solution is verified as correct by the official [Solutions for Odd-Numbered Questions][solution-manual] manual.*
+
+We can compute these by reducing the individual terms (since all members of an equivalence class behave the same), performing the arithmetic and then reducing the result:
+
+1\. $$ 15 \times 29\,\mathrm{mod}\,13 \equiv 2 \times 3\,\mathrm{mod}\,13 \equiv 6\,\mathrm{mod}\,13 $$
+
+2\. $$ 2 \times 29\,\mathrm{mod}\,13 \equiv 2 \times 3\,\mathrm{mod}\,13 \equiv 6\,\mathrm{mod}\,13 $$
+
+3\. $$ 2 \times 3\,\mathrm{mod}\,13 \equiv 2 \times 3\,\mathrm{mod}\,13 \equiv 6\,\mathrm{mod}\,13 $$
+
+4\. $$ 2 \times 3\,\mathrm{mod}\,13 \equiv 2 \times 3\,\mathrm{mod}\,13 \equiv 6\,\mathrm{mod}\,13 $$
+
+---
+
+## Exercise 1.6
+
+Compute without a calculator:
+
+1. 1/5 mod 13
+2. 1/5 mod 7
+3. 3 · 2/5 mod 7
+
+### Solution
+
+*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+
+In order to perform a division by $$x$$, we must find the multiplicative inverse $$x^{-1}$$ and multiply by it.
+
+1\.
+
+$$
+1 \div 5\,\mathrm{mod}\,13 \equiv 1 \times 5^{-1}\,\mathrm{mod}\,13 \\
+\mathsf{where}\,5 \times 5^{-1} \,\mathrm{mod}\,13 \equiv 1\,\mathrm{mod}\,13
+$$
+
+$$ 5 \times 8\,\mathrm{mod}\,13 \equiv 1\,\mathrm{mod}\,13 \\ 5^{-1}\,\mathrm{mod}\,13 \equiv 8\,\mathrm{mod}\,13$$
+
+$$ 1 \div 5\,\mathrm{mod}\,13 \equiv 1 \times 8\,\mathrm{mod}\,13 \equiv 8\,\mathrm{mod}\,13 $$
+
+2\.
+
+$$
+1 \div 5\,\mathrm{mod}\,7 \equiv 1 \times 5^{-1}\,\mathrm{mod}\,7 \\
+\mathsf{where}\,5 \times 5^{-1} \,\mathrm{mod}\,7 \equiv 1\,\mathrm{mod}\,7
+$$
+
+$$ 5 \times 3\,\mathrm{mod}\,7 \equiv 1\,\mathrm{mod}\,7 \\ 5^{-1}\,\mathrm{mod}\,7 \equiv 3\,\mathrm{mod}\,7$$
+
+$$ 1 \div 5\,\mathrm{mod}\,7 \equiv 1 \times 3\,\mathrm{mod}\,7 \equiv 3\,\mathrm{mod}\,7 $$
+
+3\.
+
+$$
+3 \times 2 \div 5\,\mathrm{mod}\,7 \equiv 3 \times 2 \times 5^{-1}\,\mathrm{mod}\,7 \\
+\mathsf{where}\,2 \times 5^{-1} \,\mathrm{mod}\,7 \equiv 1\,\mathrm{mod}\,7
+$$
+
+$$ 5 \times 3\,\mathrm{mod}\,7 \equiv 1\,\mathrm{mod}\,7 \\ 5^{-1}\,\mathrm{mod}\,7 \equiv 3\,\mathrm{mod}\,7$$
+
+$$
+3 \times 2 \div 5\,\mathrm{mod}\,7 \equiv 3 \times 2 \times 3\,\mathrm{mod}\,7 \equiv 5\,\mathrm{mod}\,7 \\
+\mathsf{because}\,3 \times 2 \times 3\,\mathrm{mod}\,7 \equiv 12\,\mathrm{mod}\,7 \equiv 5\,\mathrm{mod}\,7
+$$
+
+
+
+
+
+
+
+
+
+
+
+[solution-manual]: http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf

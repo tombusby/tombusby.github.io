@@ -50,3 +50,4 @@ As such, I have decided to create a comprehensive solution set to all problems i
   + Ex 1.2 - [Breaking a Caesar/Shift Cipher by Frequency Analysis](/understanding-cryptography-chapter-1#exercise-12)
   + Ex 1.3 - [Calculating the Length of Brute-Force Attacks against AES](/understanding-cryptography-chapter-1#exercise-13)
   + Ex 1.4 - [Password Length and Key Sizes in Bits](/understanding-cryptography-chapter-1#exercise-14)
+  + Ex 1.5 - [Multiplication Modulo 13](/understanding-cryptography-chapter-1#exercise-15)
