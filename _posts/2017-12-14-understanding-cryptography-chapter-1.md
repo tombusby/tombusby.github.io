@@ -224,7 +224,7 @@ On average, we'll find the correct key halfway through our search of the keyspac
 To calculate the length of time to find a key in the average case:
 
 <div style="text-align: center;">
-$$ \frac{2^{127}\,\mathsf{keys}}{5 \times 10^{12}\,\mathsf{keys/second}} = 3.4 \times 10^{25}\,\mathsf{seconds}$$
+$$ \frac{2^{127}\,\mathsf{keys}}{5 \times 10^{12}\,\mathsf{keys/second}} \approx 3.4 \times 10^{25}\,\mathsf{seconds}$$
 </div>
 
 This comes out to:
