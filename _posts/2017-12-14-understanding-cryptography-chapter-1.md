@@ -227,16 +227,79 @@ This is approximately $$10^8$$ times longer than the elapsed age of the universe
 
 2\. If we represent the number of Moore's Law iterations to bring the using $$i$$ then we can express the equation as:
 
+<div style="text-align: center;">
 $$ 1.08 \times 10^{18}\,\mathsf{years} \times \frac{365}{2^i} = 1\,\mathsf{day} $$
+</div>
 
 We can rearrange this equation to make $$2^i$$ the only item on the left:
 
+<div style="text-align: center;">
 $$ 2^i = 1.08 \times 10^{18} \times 365\,\mathsf{days} $$
+</div>
 
 The reveals a value of $$i$$ which is roughly $$68.42$$.
 
 Rounding the number of iterations to 69 allows us to calculate the number of years:
 
+<div style="text-align: center;">
 $$ 1.5\,\mathsf{years} \times 69\,\mathsf{iterations} = 103.5\,\mathsf{years} $$
+</div>
 
 [solution-manual]: http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf
+
+---
+
+## Exercise 1.4
+
+We now consider the relation between passwords and key size. For this purpose we consider a cryptosystem where the user enters a key in the form of a password.
+
+1. Assume a password consisting of 8 letters, where each letter is encoded by the ASCII scheme (7 bits per character, i.e., 128 possible characters). What is the size of the key space which can be constructed by such passwords?
+2. What is the corresponding key length in bits?
+3. Assume that most users use only the 26 lowercase letters from the alphabet instead of the full 7 bits of the ASCII-encoding. What is the corresponding key length in bits in this case?
+4. At least how many characters are required for a password in order to generate a key length of 128 bits in case of letters consisting of a) 7-bit characters? b) 26 lowercase letters from the alphabet?
+
+### Solution
+
+*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+
+1\. There are 128 ($$2^7$$) possible characters. If the password is 8 characters long, we can calculate the number of possible 8-character passwords as follows:
+
+<div style="text-align: center;">
+$$ 128^8 = 2^{56} \approx 7.205 \times 10^{16} $$
+</div>
+
+2\. The key length in bits is what power of two corresponds to the total number of possible passwords. We've already calculated that there are $$2^{56}$$ possible passwords. The key length is therefore 56.
+
+3\. If the password is restricted to the lower case letters, then this reduces the number of possible characters from 127 to 26. We can then recalculate the number of possible 8-letter passwords:
+
+<div style="text-align: center;">
+$$ 26^8 = 208827064576\,\mathsf{keys} $$
+</div>
+
+We can then calculate what length key in bits this is equivalent to:
+
+<div style="text-align: center;">
+$$ \log_2 208827064576 \approx 37.6035177451\,\mathsf{bits} $$
+</div>
+
+4\. In order to calculate what password length corresponds to 128 bits, we need to work out what power of the number of characters corresponds to $$2^{128}$$.
+
+a)
+
+<div style="text-align: center;">
+$$ 26^i = 2^{128} \\ i = log_{26}\,2^{128} \\ i \approx 27.231\,\mathsf{lower\,case\,letters} $$
+</div>
+
+b)
+
+We could calculate this in the same way, but since 128 is also a power of 2, the equations can be understood in a simpler way, where $$i$$ is the character length required to create the equivalent of a $$2^{128}$$ bit key:
+
+<div style="text-align: center;">
+$$ 128^i = 2^{7i} = 2^{128} $$
+</div>
+
+If we take the powers of two and do $$log_2$$ on both sides, we can solve this equation fairly trivially:
+
+<div style="text-align: center;">
+$$ 7i = 128 \\ i = 128 \div 7 \\ i \approx 18.285\,\mathsf{ASCII\,characters} $$
+</div>
