@@ -1,0 +1,12 @@
+<ul>
+    <li><a href="/understanding-cryptography-full-solution-set/">Return to index</a></li>
+    {% for list_post in site.posts reversed %}
+        {% if list_post.category == 'understanding-crypto' and list_post.chapter == 1 %}
+            {% if list_post.exercise == page.exercise %}
+                <li>Exercise {{ list_post.chapter }}.{{ list_post.exercise }}</li>
+            {% else %}
+                <li><a href="{{ list_post.url }}">Exercise {{ list_post.chapter }}.{{ list_post.exercise }}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</ul>

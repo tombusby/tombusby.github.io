@@ -45,14 +45,14 @@ As such, I have decided to create a comprehensive solution set to all problems i
 
 ## List of Questions and Answers
 
-+ Chapter 1 - [Introduction to Cryptography and Data Security](/understanding-cryptography-chapter-1)
-  + Ex 1.1 - [Breaking a Substitution Cipher by Frequency Analysis](/understanding-cryptography-chapter-1#exercise-11)
-  + Ex 1.2 - [Breaking a Caesar/Shift Cipher by Frequency Analysis](/understanding-cryptography-chapter-1#exercise-12)
-  + Ex 1.3 - [Calculating the Length of Brute-Force Attacks against AES](/understanding-cryptography-chapter-1#exercise-13)
-  + Ex 1.4 - [Password Length and Key Sizes in Bits](/understanding-cryptography-chapter-1#exercise-14)
-  + Ex 1.5 - [Multiplication in Finite Sets](/understanding-cryptography-chapter-1#exercise-15)
-  + Ex 1.6 - [Division in Finite Sets](/understanding-cryptography-chapter-1#exercise-16)
-  + Ex 1.7 - [Computing Addition and Multiplication Tables in Finite Sets](/understanding-cryptography-chapter-1#exercise-17)
-  + Ex 1.8 - [Computing Multiplicative Inverses of 5 in Several Finite Sets](/understanding-cryptography-chapter-1#exercise-18)
-  + Ex 1.9 - [Computing Large Exponents in Finite Sets](/understanding-cryptography-chapter-1#exercise-19)
-  + Ex 1.10 - [Computing Euler's Phi Function](/understanding-cryptography-chapter-1#exercise-110)
++ Chapter 1 - Introduction to Cryptography and Data Security
+  + Ex 1.1 - [Breaking a Substitution Cipher by Frequency Analysis](/understanding-cryptography-ex1.1)
+  + Ex 1.2 - [Breaking a Caesar/Shift Cipher by Frequency Analysis](/understanding-cryptography-ex1.2)
+  + Ex 1.3 - [Calculating the Length of Brute-Force Attacks against AES](/understanding-cryptography-ex1.3)
+  + Ex 1.4 - [Password Length and Key Sizes in Bits](/understanding-cryptography-ex1.4)
+  + Ex 1.5 - [Multiplication in Finite Sets](/understanding-cryptography-ex1.5)
+  + Ex 1.6 - [Division in Finite Sets](/understanding-cryptography-ex1.6)
+  + Ex 1.7 - [Computing Addition and Multiplication Tables in Finite Sets](/understanding-cryptography-ex1.7)
+  + Ex 1.8 - [Computing Multiplicative Inverses of 5 in Several Finite Sets](/understanding-cryptography-ex1.8)
+  + Ex 1.9 - [Computing Large Exponents in Finite Sets](/understanding-cryptography-ex1.9)
+  + Ex 1.10 - [Computing Euler's Phi Function](/understanding-cryptography-ex1.10)
