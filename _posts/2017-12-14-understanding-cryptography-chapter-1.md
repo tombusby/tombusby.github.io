@@ -25,6 +25,7 @@ externalLink: false
 * [Exercise 1.6](#exercise-16)
 * [Exercise 1.7](#exercise-17)
 * [Exercise 1.8](#exercise-18)
+* [Exercise 1.9](#exercise-19)
 
 ## Exercise 1.1
 
@@ -509,6 +510,75 @@ $$
 5^{-1}\,\mathrm{mod}\,12 \equiv 5\,\mathrm{mod}\,12 \\
 5^{-1}\,\mathrm{mod}\,13 \equiv 8\,\mathrm{mod}\,13
 $$
+
+---
+
+## Exercise 1.9
+
+Compute $$x$$ as far as possible without a calculator. Where appropriate, make use of a smart decomposition of the exponent as shown in the example in Sect. 1.4.1:
+
+1. x = 3<sup>2</sup> mod 13
+2. x = 7<sup>2</sup> mod 13
+3. x = 3<sup>10</sup> mod 13
+4. x = 7<sup>100</sup> mod 13
+5. 7<sup>x</sup> = 11, mod 13
+
+The last problem is called a discrete logarithm and points to a hard problem which we discuss in Chap. 8. The security of many public-key schemes is based on the hardness of solving the discrete logarithm for large numbers, e.g., with more than 1000 bits.
+
+### Solution
+
+*This solution is verified as correct by the official [Solutions for Odd-Numbered Questions][solution-manual] manual.*
+
+These can be performed by performing a smaller exponentiation and reducing:
+
+1\.
+
+$$ 3^2\,\mathrm{mod}\,13 \equiv 9\,\mathrm{mod}\,13$$
+
+2\.
+
+$$ 7^2\,\mathrm{mod}\,13 \equiv 49\,\mathrm{mod}\,13 \equiv 10\,\mathrm{mod}\,13 $$
+
+3\.
+
+$$
+3^{10}\,\mathrm{mod}\,13 \equiv 9^5\,\mathrm{mod}\,13 \equiv 81^2 \times 9\,\mathrm{mod}\,13 \\
+\equiv\,3^2 \times 9\,\mathrm{mod}\,13\equiv81,\mathrm{mod}\,13\equiv3\,\mathrm{mod}\,13
+$$
+
+4\.
+
+$$ 7^{100}\,\mathrm{mod}\,13 $$
+
+$$ \equiv {7^2}^{50}\,\mathrm{mod}\,13 $$
+
+$$ \equiv 49^{50}\,\mathrm{mod}\,13 $$
+
+$$ \equiv 10^{50}\,\mathrm{mod}\,13 $$
+
+$$ \equiv {10^2}^{25}\,\mathrm{mod}\,13 $$
+
+$$ \equiv 100^{25}\,\mathrm{mod}\,13 $$
+
+$$ \equiv 9^{25}\,\mathrm{mod}\,13 $$
+
+$$ \equiv {9^2}^{12} \times 9\,\mathrm{mod}\,13 $$
+
+$$ \equiv 81^{12} \times 9\,\mathrm{mod}\,13 $$
+
+$$ \equiv 3^{12} \times 9\,\mathrm{mod}\,13 $$
+
+$$ \equiv {3^3}^{4} \times 9\,\mathrm{mod}\,13 $$
+
+$$ \equiv 27^{4} \times 9\,\mathrm{mod}\,13 $$
+
+$$ \equiv 1^{4} \times 9\,\mathrm{mod}\,13 $$
+
+$$ \equiv 9\,\mathrm{mod}\,13 $$
+
+5\. Through trial and error, we can discover the value of $$x$$:
+
+$$ 7^5\,\mathrm{mod}\,13 \equiv 11\,\mathrm{mod}\,13 $$
 
 
 
