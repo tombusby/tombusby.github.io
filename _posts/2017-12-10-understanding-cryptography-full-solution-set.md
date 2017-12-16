@@ -53,3 +53,4 @@ As such, I have decided to create a comprehensive solution set to all problems i
   + Ex 1.5 - [Multiplication in Finite Sets](/understanding-cryptography-chapter-1#exercise-15)
   + Ex 1.6 - [Division in Finite Sets](/understanding-cryptography-chapter-1#exercise-16)
   + Ex 1.7 - [Computing Addition and Multiplication Tables in Finite Sets](/understanding-cryptography-chapter-1#exercise-17)
+  + Ex 1.7 - [Computing Multiplicative Inverses of 5 in Several Finite Sets](/understanding-cryptography-chapter-1#exercise-17)

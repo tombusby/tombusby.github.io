@@ -24,6 +24,7 @@ externalLink: false
 * [Exercise 1.5](#exercise-15)
 * [Exercise 1.6](#exercise-16)
 * [Exercise 1.7](#exercise-17)
+* [Exercise 1.8](#exercise-18)
 
 ## Exercise 1.1
 
@@ -487,6 +488,27 @@ Elements without a multiplicative inverse in $$\mathbb{Z}_4$$ are 2 and 0
 Elements without a multiplicative inverse in $$\mathbb{Z}_6$$ are 2, 3, 4 and 0
 
 For all non-zero elements of $$\mathbb{Z}_5$$, there exists a multiplicative inverse because 5 is a prime. Hence, all non-zero elements smaller than 5 are relatively prime to 5.
+
+---
+
+## Exercise 1.8
+
+What is the multiplicative inverse of 5 in $$\mathbb{Z}_{11}$$, $$\mathbb{Z}_{12}$$, and $$\mathbb{Z}_{13}$$? You can do a
+trial-and-error search using a calculator or a PC.
+
+With this simple problem we want now to stress the fact that the inverse of an integer in a given ring depends completely on the ring considered. That is, if the modulus changes, the inverse changes. Hence, it doesn’t make sense to talk about an inverse of an element unless it is clear what the modulus is. This fact is crucial for the RSA cryptosystem, which is introduced in Chap. 7. The extended Euclidean algorithm, which can be used for computing inverses efficiently, is introduced in Sect. 6.3.
+
+### Solution
+
+*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+
+These are small enough sets that you can find their inverses ($$5 \times 5^{-1} \equiv 1\,\mathrm{mod}\,n$$) by trial and error:
+
+$$
+5^{-1}\,\mathrm{mod}\,11 \equiv 9\,\mathrm{mod}\,11 \\
+5^{-1}\,\mathrm{mod}\,12 \equiv 5\,\mathrm{mod}\,12 \\
+5^{-1}\,\mathrm{mod}\,13 \equiv 8\,\mathrm{mod}\,13
+$$
 
 
 
