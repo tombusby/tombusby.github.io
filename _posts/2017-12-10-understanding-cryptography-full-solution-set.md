@@ -55,3 +55,4 @@ As such, I have decided to create a comprehensive solution set to all problems i
   + Ex 1.7 - [Computing Addition and Multiplication Tables in Finite Sets](/understanding-cryptography-chapter-1#exercise-17)
   + Ex 1.8 - [Computing Multiplicative Inverses of 5 in Several Finite Sets](/understanding-cryptography-chapter-1#exercise-18)
   + Ex 1.9 - [Computing Large Exponents in Finite Sets](/understanding-cryptography-chapter-1#exercise-19)
+  + Ex 1.10 - [Computing Euler's Phi Function](/understanding-cryptography-chapter-1#exercise-110)
