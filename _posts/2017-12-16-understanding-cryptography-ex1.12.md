@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.12"
-description: "Decrypting with the Affine Cipher"
+description: "Decrypting with the Extended German-Alphabet Affine Cipher"
 layout: post
 headerImage: false
 projects: false
