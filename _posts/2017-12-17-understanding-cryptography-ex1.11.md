@@ -4,7 +4,7 @@ description: "Decrypting with the Affine Cipher"
 layout: post
 headerImage: false
 projects: false
-date: 2017-12-16 22:50
+date: 2017-12-17 01:50
 tag:
 - cryptography
 - understanding-cryptography

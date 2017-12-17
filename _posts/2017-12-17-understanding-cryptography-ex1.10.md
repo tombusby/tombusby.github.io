@@ -4,7 +4,7 @@ description: "Computing Euler's Phi Function"
 layout: post
 headerImage: false
 projects: false
-date: 2017-12-16 22:49
+date: 2017-12-17 00:49
 tag:
 - cryptography
 - understanding-cryptography

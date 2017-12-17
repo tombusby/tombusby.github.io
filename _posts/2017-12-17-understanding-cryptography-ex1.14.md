@@ -56,6 +56,8 @@ $$ k_3 \equiv (3 \times 11\,\mathrm{mod}\,26, 11 \times 5 + 7\,\mathrm{mod}\,26)
 
 3\. This can be confirmed by using the Python code I wrote for [Ex 1.11](/understanding-cryptography-ex1.11) to make sure that the output is the same for both the double encryption, and the equivalent single encryption.
 
-4\. The keyspace does not increase by double encryption. Since all $$e_{k2}(e_{k1}(x))$$ can be reduced to an equivalent $$e_k(x)$$, then searching all $$(k_1 \in \mathcal{K}, k_2 \in \mathcal{K})$$ is equivalent to searching all $$k \in \mathcal{K}$$.
+4\. The keyspace does not increase by double encryption.
+
+Since all $$e_{k2}(e_{k1}(x))$$ can be reduced to an equivalent $$e_k(x)$$, then searching all $$(k_1 \in \mathcal{K}, k_2 \in \mathcal{K})$$ is equivalent to searching all $$k \in \mathcal{K}$$.
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
