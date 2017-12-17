@@ -42,7 +42,7 @@ wb wi kjb mk rmit bmiq bj rashmwk rmvp yjeryrkb mkd wbi iwokwxwvmkvr mkd ijyr yn
 
 1\. Tallying up the letter frequencies produces the table below:
 
-![Frequency table]({{ site.url }}/assets/images/ex1-1-freq-table.png){: .image-center}
+![Frequency table]({{ site.url }}/assets/images/understanding-crypto/ex1-1-freq-table.png){: .image-center}
 
 2\. Pairing this frequency table with the list of most common letters in the English language does not yield a key which produces intelligible text. However, enough words "stick out" that it's fairly simple to swap mismatches manually until the plaintext reveals itself:
 
