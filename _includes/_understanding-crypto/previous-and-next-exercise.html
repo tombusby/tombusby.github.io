@@ -2,14 +2,19 @@
 <hr>
 
 <div class="pagination">
-    {% if page.next_in_category %}
-        <a href="{{ page.next_in_category.url }}" class="previous">Previous Exercise</a>
-    {% else %}
+
+    {% if page.first_exercise %}
         <span>Previous Exercise</span>
+    {% else %}
+        <a href="{{ page.previous.url }}" class="previous">Previous Exercise</a>
     {% endif %}
 
-    {% if page.previous_in_category %}
-        <a href="{{ page.previous_in_category.url }}" class="previous">Next Exercise</a>
+    {% if page.next %}
+        {% if page.last_exercise %}
+            <span>Next Exercise</span>
+        {% else %}
+            <a href="{{ page.next.url }}" class="previous">Next Exercise</a>
+        {% endif %}
     {% else %}
         <span>Next Exercise</span>
     {% endif %}
