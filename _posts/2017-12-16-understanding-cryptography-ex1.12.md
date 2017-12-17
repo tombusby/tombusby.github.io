@@ -38,7 +38,7 @@ Now, we want to extend the affine cipher from Sect. 1.4.4 such that we can encry
 
 $$ e_k(x) = y \equiv a ⋅ x + b\,\mathrm{mod}\,30 $$
 
-$$ e_k(x) = y \equiv a^{-1} ⋅ (y - b)\,\mathrm{mod}\,30 $$
+$$ d_k(y) = x \equiv a^{-1} ⋅ (y - b)\,\mathrm{mod}\,30 $$
 
 $$ \mathsf{where}\, k = (a, b)\,\mathsf{such\,that}\,\mathrm{gcd}(a, 30) = 1 $$
 
