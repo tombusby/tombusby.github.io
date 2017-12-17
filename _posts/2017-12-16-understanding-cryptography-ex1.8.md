@@ -17,7 +17,7 @@ exercise: 8
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.8
 
@@ -37,3 +37,5 @@ $$
 5^{-1}\,\mathrm{mod}\,12 \equiv 5\,\mathrm{mod}\,12 \\
 5^{-1}\,\mathrm{mod}\,13 \equiv 8\,\mathrm{mod}\,13
 $$
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

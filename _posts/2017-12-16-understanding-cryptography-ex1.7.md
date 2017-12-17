@@ -17,7 +17,7 @@ exercise: 7
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.7
 
@@ -108,3 +108,5 @@ Elements without a multiplicative inverse in $$\mathbb{Z}_4$$ are 2 and 0
 Elements without a multiplicative inverse in $$\mathbb{Z}_6$$ are 2, 3, 4 and 0
 
 For all non-zero elements of $$\mathbb{Z}_5$$, there exists a multiplicative inverse because 5 is a prime. Hence, all non-zero elements smaller than 5 are relatively prime to 5.
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

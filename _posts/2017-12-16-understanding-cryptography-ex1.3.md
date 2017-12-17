@@ -17,7 +17,7 @@ exercise: 3
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.3
 
@@ -80,3 +80,5 @@ Rounding the number of iterations to 69 allows us to calculate the number of yea
 <div style="text-align: center;">
 $$ 1.5\,\mathsf{years} \times 69\,\mathsf{iterations} = 103.5\,\mathsf{years} $$
 </div>
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

@@ -17,7 +17,7 @@ exercise: 10
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.10
 
@@ -130,3 +130,5 @@ $$ \mathrm{gcd}(24, 26) = 2 $$
 $$ \mathrm{gcd}(25, 26) = 1 $$
 
 $$\phi(26) = 12$$
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

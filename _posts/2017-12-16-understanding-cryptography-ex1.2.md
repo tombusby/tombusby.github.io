@@ -17,7 +17,7 @@ exercise: 2
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.2
 
@@ -85,3 +85,5 @@ if __name__ == "__main__":
     statistical_attack(ciphertext)
     print "Q1.2.2 Answer: This was said by Tecumseh\n"
 {% endhighlight %}
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

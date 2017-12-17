@@ -17,7 +17,7 @@ exercise: 9
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.9
 
@@ -85,3 +85,5 @@ $$ \equiv 9\,\mathrm{mod}\,13 $$
 5\. Through trial and error, we can discover the value of $$x$$:
 
 $$ 7^5\,\mathrm{mod}\,13 \equiv 11\,\mathrm{mod}\,13 $$
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

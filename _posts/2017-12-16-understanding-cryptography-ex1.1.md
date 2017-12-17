@@ -17,7 +17,7 @@ exercise: 1
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.1
 
@@ -118,3 +118,5 @@ with open("ex1.1-ciphertext.txt") as f:
     print_deciphered_plaintext("Manually Tweaked", key, decipher(ciphertext, key))
     print "Q1.1.3 Answer: This was said by Shoshin Nagamine", "\n"
 {% endhighlight %}
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

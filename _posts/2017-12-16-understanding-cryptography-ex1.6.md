@@ -17,7 +17,7 @@ exercise: 6
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.6
 
@@ -68,3 +68,5 @@ $$
 3 \times 2 \div 5\,\mathrm{mod}\,7 \equiv 3 \times 2 \times 3\,\mathrm{mod}\,7 \equiv 4\,\mathrm{mod}\,7 \\
 \mathsf{because}\,3 \times 2 \times 3\,\mathrm{mod}\,7 \equiv 18\,\mathrm{mod}\,7 \equiv 4\,\mathrm{mod}\,7
 $$
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

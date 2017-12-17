@@ -17,7 +17,7 @@ exercise: 5
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.5
 
@@ -45,3 +45,5 @@ We can compute these by reducing the individual terms (since all members of an e
 3\. $$ 2 \times 3\,\mathrm{mod}\,13 \equiv 6\,\mathrm{mod}\,13 $$
 
 4\. $$ -11 \times 3\,\mathrm{mod}\,13 \equiv 2 \times 3\,\mathrm{mod}\,13 \equiv 6\,\mathrm{mod}\,13 $$
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}

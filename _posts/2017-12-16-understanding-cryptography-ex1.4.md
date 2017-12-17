@@ -17,7 +17,7 @@ exercise: 4
 externalLink: false
 ---
 
-{% include _understanding-crypto/chapter1-menu.html %}
+{% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 1.4
 
@@ -73,3 +73,5 @@ If we take the powers of two and do $$log_2$$ on both sides, we can solve this e
 <div style="text-align: center;">
 $$ 7i = 128 \\ i = 128 \div 7 \\ i \approx 18.285\,\mathsf{ASCII\,characters} $$
 </div>
+
+{% include _understanding-crypto/previous-and-next-exercise.html %}
