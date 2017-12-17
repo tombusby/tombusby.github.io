@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.8"
-description: "A full solution-set for the problems at the end of Chapter 1 of Understanding Cryptography"
+description: "Computing Multiplicative Inverses of 5 in Several Finite Sets"
 layout: post
 headerImage: false
 projects: false

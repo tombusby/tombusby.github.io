@@ -45,14 +45,13 @@ As such, I have decided to create a comprehensive solution set to all problems i
 
 ## List of Questions and Answers
 
-+ Chapter 1 - Introduction to Cryptography and Data Security
-  + Ex 1.1 - [Breaking a Substitution Cipher by Frequency Analysis](/understanding-cryptography-ex1.1)
-  + Ex 1.2 - [Breaking a Caesar/Shift Cipher by Frequency Analysis](/understanding-cryptography-ex1.2)
-  + Ex 1.3 - [Calculating the Length of Brute-Force Attacks against AES](/understanding-cryptography-ex1.3)
-  + Ex 1.4 - [Password Length and Key Sizes in Bits](/understanding-cryptography-ex1.4)
-  + Ex 1.5 - [Multiplication in Finite Sets](/understanding-cryptography-ex1.5)
-  + Ex 1.6 - [Division in Finite Sets](/understanding-cryptography-ex1.6)
-  + Ex 1.7 - [Computing Addition and Multiplication Tables in Finite Sets](/understanding-cryptography-ex1.7)
-  + Ex 1.8 - [Computing Multiplicative Inverses of 5 in Several Finite Sets](/understanding-cryptography-ex1.8)
-  + Ex 1.9 - [Computing Large Exponents in Finite Sets](/understanding-cryptography-ex1.9)
-  + Ex 1.10 - [Computing Euler's Phi Function](/understanding-cryptography-ex1.10)
+<ul>
+  <li>Chapter 1 - Introduction to Cryptography and Data Security</li>
+  <ul>
+    {% for post in site.posts reversed %}
+        {% if post.category == 'understanding-crypto' and post.chapter == 1 %}
+          <li>Ex {{ post.chapter }}.{{ post.exercise }} - <a href="{{ post.url }}">{{ post.description }}</a></li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+</ul>
