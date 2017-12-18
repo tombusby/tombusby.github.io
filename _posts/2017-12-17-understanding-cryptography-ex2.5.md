@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.5"
-description: "The Impossibility of Brute Force Attacks on One Time Pads (OTPs)"
+description: "Calculating the Output and State of Linear Feedback Shift Registers (LFSRs)"
 layout: post
 headerImage: false
 projects: false
