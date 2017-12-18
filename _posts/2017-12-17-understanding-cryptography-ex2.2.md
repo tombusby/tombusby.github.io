@@ -25,7 +25,7 @@ Assume we store a one-time key on a CD-ROM with a capacity of 1 Gbyte. Discuss t
 
 ### Solution
 
-*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+*I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
 
 Some of the main issues are as follows:
 

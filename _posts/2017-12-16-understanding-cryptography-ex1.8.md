@@ -28,7 +28,7 @@ With this simple problem we want now to stress the fact that the inverse of an i
 
 ### Solution
 
-*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+*I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
 
 These are small enough sets that you can find their inverses ($$5 \times 5^{-1} \equiv 1\,\mathrm{mod}\,n$$) by trial and error:
 

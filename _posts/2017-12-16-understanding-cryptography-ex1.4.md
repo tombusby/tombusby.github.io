@@ -30,7 +30,7 @@ We now consider the relation between passwords and key size. For this purpose we
 
 ### Solution
 
-*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+*I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
 
 1\. There are 128 ($$2^7$$) possible characters. If the password is 8 characters long, we can calculate the number of possible 8-character passwords as follows:
 

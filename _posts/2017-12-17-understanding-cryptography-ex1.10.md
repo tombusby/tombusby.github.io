@@ -25,7 +25,7 @@ Find all integers n between $$0 ≤ n < m$$ that are relatively prime to $$m$$ f
 
 ### Solution
 
-*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+*I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
 
 $$m = 4$$:
 

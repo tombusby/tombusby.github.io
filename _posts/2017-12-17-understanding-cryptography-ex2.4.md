@@ -27,7 +27,7 @@ At first glance it seems as though an exhaustive key search is possible against 
 
 ### Solution
 
-*I haven't yet verified these solutions independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+*I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
 
 Even with a relatively small search space such as 40-bits, the plaintext could be any 40-bit number and the key could be any 40-bit number. As such any plaintext can produce any ciphertext, given the right key and any key can produce any ciphertext, given the right plaintext.
 
