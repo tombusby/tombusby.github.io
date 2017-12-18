@@ -4,7 +4,7 @@ description: "Discussion of Key Management Issues with One Time Pads (OTPs)"
 layout: post
 headerImage: false
 projects: false
-date: 2017-12-17 18:00
+date: 2017-12-18 18:00
 tag:
 - cryptography
 - understanding-cryptography
