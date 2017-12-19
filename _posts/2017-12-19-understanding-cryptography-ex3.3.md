@@ -49,13 +49,11 @@ $$ f(0) = P(S_1(0), S_2(0), S_3(0), S_4(0), S_5(0), S_6(0), S_7(0), S_8(0)) $$
 
 We will call the intermediate value before $$P$$ is applied $$R_1^\prime$$ and it after applying all the S-boxes, it is as follows:
 
-<pre class="pre-wrap-enabled">
-1110 1111 1010 0111 0010 1100 0100 1101
-</pre>
+$$ 11101111101001110010110001001101_2 $$
 
-To finish calculating $$R_1$$ we need to apply $$P$$:
+To finish calculating $$R_1$$ we need to apply $$P(R_1^\prime)$$:
 
-$$ P(11101111101001110010110001001101_2) = 11011000110110001101101110111100_2 $$
+$$ P(R_1^\prime) = 11011000110110001101101110111100_2 $$
 
 Therefore:
 
