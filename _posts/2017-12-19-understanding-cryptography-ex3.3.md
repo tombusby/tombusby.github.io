@@ -47,7 +47,7 @@ Calculating the $$f$$ function is as follows:
 
 $$ f(0) = P(S_1(0), S_2(0), S_3(0), S_4(0), S_5(0), S_6(0), S_7(0), S_8(0)) $$
 
-We will call the intermediate value before $$P$$ is applied $$R_1^\prime$$ and it after applying all the S-boxes, it is as follows:
+We will call the intermediate value before $$P$$ is applied $$R_1^\prime$$ and after applying all the S-boxes, it is as follows:
 
 $$ 11101111101001110010110001001101_2 $$
 
