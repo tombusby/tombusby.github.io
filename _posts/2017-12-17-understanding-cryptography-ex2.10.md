@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.10"
-description: "Performing a Chosen Plaintext Attack to Break an LFSR by Revealing its Feedback Coefficients"
+description: "Performing a Chosen Plaintext Attack to Break an LFSR and Reveal its Feedback Coefficients"
 layout: post
 headerImage: false
 projects: false
@@ -110,7 +110,7 @@ $$ R_3 \rightarrow R_3 + R_1 $$
 
 The matrix is now in reduced row echelon form, which allows the values of the unknowns to be read directly from the matrix. The feedback coefficients of the LFSR are $$(p_0 = 1, p_1 = 1, p_2 = 0)$$, which is represented graphically as follows:
 
-![LFSR 2]({{ site.url }}/assets/images/understanding-crypto/ex2-10-lfsr.png){: .image-center}
+![LFSR]({{ site.url }}/assets/images/understanding-crypto/ex2-10-lfsr.png){: .image-center}
 
 To double check that our solution is correct, we can run the reconstructed LFSR outselves to be sure that it produces the same keystream:
 
