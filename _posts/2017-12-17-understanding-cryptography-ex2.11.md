@@ -153,6 +153,8 @@ p_5 & p_4 & p_3 & p_2 & p_1 & p_0 \\ \hline
 
 3\. I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter%2002/ex2.11.py) which can perform many of the operations involved in this attack:
 
+*Note*: This is not a remotely efficient implementation of an LFSR-based Stream Cipher.
+
 {% highlight python %}
 import string, re
 
