@@ -62,4 +62,12 @@ As such, I have decided to create a comprehensive solution set to all problems i
         {% endif %}
     {% endfor %}
   </ul>
+  <li>Chapter 3 - The Data Encryption Standard (DES) and Alternatives</li>
+  <ul>
+    {% for post in site.posts reversed %}
+        {% if post.category == 'understanding-crypto' and post.chapter == 3 %}
+          <li>Ex {{ post.chapter }}.{{ post.exercise }} - <a href="{{ post.url }}">{{ post.description }}</a></li>
+        {% endif %}
+    {% endfor %}
+  </ul>
 </ul>
