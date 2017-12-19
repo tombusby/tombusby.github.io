@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.4"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.4"
 description: "The Impossibility of Brute Force Attacks on One Time Pads (OTPs)"
 layout: post
 headerImage: false

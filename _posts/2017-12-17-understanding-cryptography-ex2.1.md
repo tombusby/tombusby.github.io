@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.1"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.1"
 description: "Developing a Stream Cipher which Operates on the Latin Alphabet"
 layout: post
 headerImage: false

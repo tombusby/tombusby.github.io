@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.9"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.9"
 description: "Discussion of Attacks Against LFSRs"
 layout: post
 headerImage: false

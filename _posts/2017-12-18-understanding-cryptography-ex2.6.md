@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.6"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.6"
 description: "Chosen Plaintext Attacks Against Stream Ciphers with Short Periods"
 layout: post
 headerImage: false

@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.7"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.7"
 description: "Computing the First Two Bytes of Output from an LSFR with an 8th Degree Polynomial"
 layout: post
 headerImage: false

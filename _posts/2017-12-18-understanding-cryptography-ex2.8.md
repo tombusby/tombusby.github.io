@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.8"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.8"
 description: "Computing All Sequences from Reducible, Irriducible and Primitive Polynomial LFSRs"
 layout: post
 headerImage: false

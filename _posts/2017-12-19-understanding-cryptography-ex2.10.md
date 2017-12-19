@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.10"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.10"
 description: "Performing a Chosen Plaintext Attack to Break an LFSR and Reveal its Feedback Coefficients"
 layout: post
 headerImage: false
