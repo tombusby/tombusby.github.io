@@ -57,7 +57,7 @@ $$ \log_2 208827064576 \approx 37.6035177451\,\mathsf{bits} $$
 a)
 
 <div style="text-align: center;">
-$$ 26^i = 2^{128} \\ i = log_{26}\,2^{128} \\ i \approx 27.231\,\mathsf{lower\,case\,letters} $$
+$$ 26^i = 2^{128} \\ i = \log_{26}\,2^{128} \\ i \approx 27.231\,\mathsf{lower\,case\,letters} $$
 </div>
 
 b)
@@ -68,7 +68,7 @@ We could calculate this in the same way, but since 128 is also a power of 2, the
 $$ 128^i = 2^{7i} = 2^{128} $$
 </div>
 
-If we take the powers of two and do $$log_2$$ on both sides, we can solve this equation fairly trivially:
+If we take the powers of two and do $$\log_2$$ on both sides, we can solve this equation fairly trivially:
 
 <div style="text-align: center;">
 $$ 7i = 128 \\ i = 128 \div 7 \\ i \approx 18.285\,\mathsf{ASCII\,characters} $$

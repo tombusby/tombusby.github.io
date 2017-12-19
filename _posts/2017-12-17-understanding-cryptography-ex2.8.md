@@ -73,7 +73,7 @@ The polynomial produces a single $$ 2^4 - 1 $$ length sequence of internal state
 
 2\. This LFSR derived from $$ x^4 + x^2 + 1 $$ can be represented as follows:
 
-![LFSR 1]({{ site.url }}/assets/images/understanding-crypto/ex2-8-lfsr-2.png){: .image-center}
+![LFSR 2]({{ site.url }}/assets/images/understanding-crypto/ex2-8-lfsr-2.png){: .image-center}
 
 Starting from $$ 0001_2 $$, $$ 1001_2 $$ and $$ 0110_2 $$, the LFSR will iterate through the following states:
 
@@ -123,7 +123,7 @@ The polynomial produces three distinct sequences of internal states (together co
 
 2\. This LFSR derived from $$ x^4 + x^3 + x^2 + x + 1 $$ can be represented as follows:
 
-![LFSR 1]({{ site.url }}/assets/images/understanding-crypto/ex2-8-lfsr-3.png){: .image-center}
+![LFSR 3]({{ site.url }}/assets/images/understanding-crypto/ex2-8-lfsr-3.png){: .image-center}
 
 Starting from $$ 0001_2 $$, $$ 1111_2 $$ and $$ 1001_2 $$, the LFSR will iterate through the following states:
 
@@ -170,6 +170,5 @@ Starting from $$ 0001_2 $$, $$ 1111_2 $$ and $$ 1001_2 $$, the LFSR will iterate
 </div>
 
 The polynomial produces three distinct sequences of internal states (together containing all non-zero 4-bit binary numbers) of the same length. It is therefore an ireducible (but not primitive) polynomial.
-
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
