@@ -21,7 +21,7 @@ externalLink: false
 
 ## Exercise 1.10
 
-Find all integers n between $$0 ≤ n < m$$ that are relatively prime to $$m$$ for $$m = 4,5,9,26$$. We denote the number of integers $$n$$ which fulfill the condition by $$\phi(m)$$, e.g. $$\phi(3) = 2$$. This function is called “Euler’s phi function”. What is $$\phi(m)$$ for $$m = 4,5,9,26$$?
+Find all integers $$n$$ between $$0 \le n \lt m$$ that are relatively prime to $$m$$ for $$m = 4,5,9,26$$. We denote the number of integers $$n$$ which fulfill the condition by $$\phi(m)$$, e.g. $$\phi(3) = 2$$. This function is called “Euler’s phi function”. What is $$\phi(m)$$ for $$m = 4,5,9,26$$?
 
 ### Solution
 
