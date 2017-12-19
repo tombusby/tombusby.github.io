@@ -4,7 +4,7 @@ description: "Performing a Chosen Plaintext Attack to Break an LFSR and Reveal i
 layout: post
 headerImage: false
 projects: false
-date: 2017-12-19 01:14
+date: 2017-12-19 18:10
 tag:
 - cryptography
 - understanding-cryptography
