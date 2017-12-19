@@ -121,9 +121,9 @@ $$ R_2 \rightarrow R_2 + R_3 $$
 
 $$ R_3 \rightarrow R_3 + R_4 $$
 
-$$ R_4 \rightarrow R_3 + R_5 $$
+$$ R_4 \rightarrow R_4 + R_5 $$
 
-$$ R_5 \rightarrow R_4 + R_6 $$
+$$ R_5 \rightarrow R_5 + R_6 $$
 
 <div style="text-align: center;">
 <script type="math/tex">
