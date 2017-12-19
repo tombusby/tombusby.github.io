@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.2"
-description: "Verifying the Non-Linearity of the DES S-boxes"
+description: "Veryifying that IP and IP-1 are Each Other's Inverse"
 layout: post
 headerImage: false
 projects: false
