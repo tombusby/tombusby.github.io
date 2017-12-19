@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex2.10"
-description: "Computing All Sequences from Reducible, Irriducible and Primitive Polynomial LFSRs"
+description: "Performing a Chosen Plaintext Attack to Break an LFSR by Revealing its Feedback Coefficients"
 layout: post
 headerImage: false
 projects: false
