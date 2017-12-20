@@ -31,7 +31,7 @@ Describe in detail how such a cipher can be attacked. Specify exactly what Oscar
 
 For a stream cipher with a 150-200 bit period, and without knowing an attack against the underlying PRNG, we can break the cipher via a 150-200 bit chosen plaintext attack. We simply XOR the plaintext with the ciphertext bits to recover the key until the key starts to repeat somewhere between bit 150 and 200. After that we check to see if the key can decrypt the rest of the 200 bits of chosen-plaintext ciphertext bits and the remaining unknown ciphertext bits.
 
-You might ask how we'd know if the unknown ciphertext was decrypted correctly. As per the question, we know that the message should decrypt to intelligible English-language text in ASCII-encoding. The chances of accidentally finding another keystream the decrypts the message to intelligible English text is so astronomical that it can be discounted.
+You might ask how we'd know if the unknown ciphertext was decrypted correctly. As per the question, we know that the message should decrypt to intelligible English-language text in ASCII-encoding. The chances of accidentally finding another keystream that decrypts the message to intelligible English text is so astronomical that it can be discounted.
 
 If this doesn't work then what we found wasn't truly the beginning of key bit repetition. We simply found, by coincidence, a key-bit sequence that matched the first $$n$$ bits of the key. We repeat the process until the true point at which the keystream loops is discovered.
 
