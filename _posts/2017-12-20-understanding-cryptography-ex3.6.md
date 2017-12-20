@@ -51,16 +51,16 @@ This allows us to completely forget about $$D$$ when calculating which S-boxes a
 2. & 6 & \xrightarrow{PC-2} & 10 & \xrightarrow{\,\,\,\oplus\,\,\,} &  2 \\
 3. & 4 & \xrightarrow{PC-2} & 16 & \xrightarrow{\,\,\,\oplus\,\,\,} &  3 \\
 4. & 2 & \xrightarrow{PC-2} & 24 & \xrightarrow{\,\,\,\oplus\,\,\,} &  4 \\
-5. & 2 & \xrightarrow{PC-2} & 8 & \xrightarrow{\,\,\,\oplus\,\,\,} &  2 \\
-6. & 2 & \xrightarrow{PC-2} & 17 & \xrightarrow{\,\,\,\oplus\,\,\,} &  3 \\
-7. & 2 & \xrightarrow{PC-2} & 4 & \xrightarrow{\,\,\,\oplus\,\,\,} &  1 \\
-8. & 2 & \xrightarrow{PC-2} & N/A & \xrightarrow{\,\,\,\oplus\,\,\,} & N/A \\
-9. & 2 & \xrightarrow{PC-2} & 11 & \xrightarrow{\,\,\,\oplus\,\,\,} &  2 \\
-0. & 1 & \xrightarrow{PC-2} & 14 & \xrightarrow{\,\,\,\oplus\,\,\,} &  3 \\
-11. & 1 & \xrightarrow{PC-2} & 2 & \xrightarrow{\,\,\,\oplus\,\,\,} &  1 \\
-12. & 1 & \xrightarrow{PC-2} & 9 & \xrightarrow{\,\,\,\oplus\,\,\,} &  2 \\
-13. & 1 & \xrightarrow{PC-2} & 23 & \xrightarrow{\,\,\,\oplus\,\,\,} &  4 \\
-14. & 1 & \xrightarrow{PC-2} & 3 & \xrightarrow{\,\,\,\oplus\,\,\,} &  1 \\
+5. & 28 & \xrightarrow{PC-2} & 8 & \xrightarrow{\,\,\,\oplus\,\,\,} &  2 \\
+6. & 26 & \xrightarrow{PC-2} & 17 & \xrightarrow{\,\,\,\oplus\,\,\,} &  3 \\
+7. & 24 & \xrightarrow{PC-2} & 4 & \xrightarrow{\,\,\,\oplus\,\,\,} &  1 \\
+8. & 22 & \xrightarrow{PC-2} & N/A & \xrightarrow{\,\,\,\oplus\,\,\,} & N/A \\
+9. & 21 & \xrightarrow{PC-2} & 11 & \xrightarrow{\,\,\,\oplus\,\,\,} &  2 \\
+10. & 19 & \xrightarrow{PC-2} & 14 & \xrightarrow{\,\,\,\oplus\,\,\,} &  3 \\
+11. & 17 & \xrightarrow{PC-2} & 2 & \xrightarrow{\,\,\,\oplus\,\,\,} &  1 \\
+12. & 15 & \xrightarrow{PC-2} & 9 & \xrightarrow{\,\,\,\oplus\,\,\,} &  2 \\
+13. & 13 & \xrightarrow{PC-2} & 23 & \xrightarrow{\,\,\,\oplus\,\,\,} &  4 \\
+14. & 11 & \xrightarrow{PC-2} & 3 & \xrightarrow{\,\,\,\oplus\,\,\,} &  1 \\
 15. & 9 & \xrightarrow{PC-2} & N/A & \xrightarrow{\,\,\,\oplus\,\,\,} & N/A \\
 16. & 8 & \xrightarrow{PC-2} & 18 & \xrightarrow{\,\,\,\oplus\,\,\,} &  3
 \end{array}
