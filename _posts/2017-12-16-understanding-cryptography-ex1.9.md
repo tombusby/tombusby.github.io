@@ -49,7 +49,7 @@ $$ 7^2\,\mathrm{mod}\,13 \equiv 49\,\mathrm{mod}\,13 \equiv 10\,\mathrm{mod}\,13
 
 $$
 3^{10}\,\mathrm{mod}\,13 \equiv 9^5\,\mathrm{mod}\,13 \equiv 81^2 \times 9\,\mathrm{mod}\,13 \\
-\equiv\,3^2 \times 9\,\mathrm{mod}\,13\equiv81,\mathrm{mod}\,13\equiv3\,\mathrm{mod}\,13
+\equiv\,3^2 \times 9\,\mathrm{mod}\,13\equiv81\,\mathrm{mod}\,13\equiv3\,\mathrm{mod}\,13
 $$
 
 4\.
