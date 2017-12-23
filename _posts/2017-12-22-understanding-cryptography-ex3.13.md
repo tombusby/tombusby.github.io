@@ -20,6 +20,7 @@ externalLink: false
 {% include _understanding-crypto/chapter-menu.html %}
 
 ## Exercise 3.13
+
 This problem deals with the lightweight cipher PRESENT.
 1. Calculate the state of PRESENT-80 after the execution of one round. You can use the following table to solve this problem with paper and pencil. Use the following values (in hexadecimal notation):
     * plaintext = 0000 0000 0000 0000,
