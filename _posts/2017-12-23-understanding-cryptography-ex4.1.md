@@ -42,7 +42,7 @@ This appears to be the beginning of the modern consensus that an open design pro
 * 2nd January 1997 - Public announcement of the need for a algorithm candidates by NIST for a new "Advanced Encryption Standard".
 * 12th September 1997 - Formal request for candidate algorithms by NIST.
 * 20th August 1998 - 15 candidate algorithms were selected by NIST.
-* 9th August 1999 - 5 fianlist algorithms were announced.
+* 9th August 1999 - 5 fianlist algorithms were announced.  (Mars, RC6, Rijndael, Serpent, Twofish).
 * 2nd October 2000 - NIST announced that Rijndael had been selected as the AES algorithm.
 * 26th November 2001 - AES was formally approved as a US federal standard.
 
