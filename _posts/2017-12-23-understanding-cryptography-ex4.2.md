@@ -22,7 +22,7 @@ externalLink: false
 ## Exercise 4.2
 For the AES algorithm, some computations are done by Galois Fields (GF). With the following problems, we practice some basic computations.
 
-Compute the multiplication and addition table for the prime field $$GF(7)$$. A multiplication table is a square (here: 7×7) table which has as its rows and columns all field elements. Its entries are the products of the field element at the corresponding row and column. Note that the table is symmetric along the diagonal. The addition table is completely analogous but contains the sums of field elements as entries.
+Compute the multiplication and addition table for the prime field $$GF(7)$$. A multiplication table is a square (here: $$7 \times 7$$) table which has as its rows and columns all field elements. Its entries are the products of the field element at the corresponding row and column. Note that the table is symmetric along the diagonal. The addition table is completely analogous but contains the sums of field elements as entries.
 
 ### Solution
 
@@ -58,7 +58,7 @@ Compute the multiplication and addition table for the prime field $$GF(7)$$. A m
 </script>
 </div>
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-04/ex4.2.py) which can calculate addition and multiplication tables for $$GF(p^1)$$ fields.
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-04/ex4.2.py) which can calculate addition and multiplication tables for $$GF(p^1)$$ fields:
 
 {% highlight python %}
 from pprint import pprint
