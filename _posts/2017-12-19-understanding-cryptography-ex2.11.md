@@ -72,7 +72,7 @@ Given that we know the degree of the LFSR is 6, then the first 6 bits of the key
 111111
 </pre>
 
-2\. We can derive the feedback coefficients, we can exploit our knowledge of $$2m$$ bits of keystream:
+2\. To derive the feedback coefficients, we can exploit our knowledge of $$2m$$ bits of keystream:
 
 <div style="text-align: center; margin-bottom: 20px">
 <script type="math/tex">
