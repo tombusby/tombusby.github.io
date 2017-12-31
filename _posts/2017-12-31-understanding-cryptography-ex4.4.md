@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.4"
-description: "Performing Multiplication and Reduction in GF(2⁴)"
+description: "Performing Addition and Reduction in GF(2⁴)"
 layout: post
 headerImage: false
 projects: false
@@ -30,40 +30,14 @@ Addition in $$GF(2^4)$$: Compute $$A(x) + B(x)\,\mathrm{mod}\,P(x)$$ in $$GF(2^4
 
 *I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
 
-The influence of the reduction polynonomial choice is that different primitive polynomials will produce different results for any multiplications that require modulo reduction to bring them back into the field.
+The choice of reduction polynomial has no impact on the computation, since it is not possible for the result of addition to be outside the Field and therefore require reduction.
 
-1\. Since a naive multiplication would produce an order 5 polynomial, this must be reduced using the reduction polynomial. The naive multiplication produces this output:
+1\.
 
-$$ (x^2 +1)(x^3 +x^2 +1) = x^5 + x^4 + x^3 + 1 $$
+$$ (x^2 + 1) \oplus (x^3 + x^2 + 1) = x^3 $$
 
-In order to finish, we must calculate $$ x^5 + x^4 + x^3 + 1 \,\mathrm{mod}\, x^4 +x +1 $$:
+2\.
 
-$$
-\require{enclose}
-\begin{array}{r}
-                x + 1  \\[-3pt]
-x^4 +x +1 \enclose{longdiv}{x^5 + x^4 + x^3 + 0 + 0 + 1} \\
-\oplus\,\,\underline{x^5 +\,\,0\,\, + 0 + x^2 + x + 0 } \\
-x^4 + x^3 + x^2 + x + 1 \\
-\oplus\,\,\underline{x^4 + 0\,\,+ 0\,\,+ x + 1 } \\
-x^3\, + x^2\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,
-\end{array}
-$$
-
-The remainder of this division is $$ x^3 + x^2 $$. This answer can be verified as correct by placing the following python code in the \__main__ section of the script written for Ex4.3:
-
-{% highlight python %}
-
-    mod = Mod2Polynomial([1, 1, 0, 0, 1])
-    a = Mod2Polynomial([1, 0, 1])
-    b = Mod2Polynomial([1, 0, 1, 1])
-
-    print a * b % mod
-
-{% endhighlight %}
-
-2\. No modulo reduction is required to calculate this multiplication (since the output is still in the field):
-
-$$ (x^2 +1)(x+1) = x^3 + x^2 + x + 1 $$
+$$ (x^2 + 1) \oplus (x + 1) = x^2 + x $$
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
