@@ -19,11 +19,11 @@ externalLink: false
 
 <style type="text/css">
 
-@media (max-width: 768px) {
-    #polynomial-table {
-        overflow-x: scroll;
+    @media (max-width: 768px) {
+        #polynomial-table {
+            overflow-x: scroll;
+        }
     }
-}
 
 </style>
 
@@ -53,10 +53,9 @@ x^2 + x + 1 & 0 & x^2 + x + 1 & x^2 + 1 & x & 1 & x^2 + x & x^2 & x + 1
 </script>
 </div>
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-04/ex4.3.py) which can calculate addition and multiplication tables for $$GF(2^3)$$ fields:
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-04/ex4.3.py) which can calculate multiplication tables for $$GF(2^3)$$ fields:
 
 {% highlight python %}
-#!/usr/bin/env python
 from pprint import pprint
 
 class Mod2Polynomial:
