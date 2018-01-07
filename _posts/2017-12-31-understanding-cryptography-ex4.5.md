@@ -50,7 +50,9 @@ x^3\, + x^2\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,
 \end{array}
 $$
 
-The remainder of this division is $$ x^3 + x^2 $$. This answer can be verified as correct by placing the following python code in the \__main__ section of the script written for Ex4.3:
+The effect of the reduction polynomial is that it would produce a different output given a different primitive polynomial.
+
+The remainder of this division is $$ x^3 + x^2 $$. This answer can be verified as correct (assuming my code is correct) by placing the following python code in the \__main__ section of the script written for Ex4.3:
 
 {% highlight python %}
 
