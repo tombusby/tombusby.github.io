@@ -34,16 +34,16 @@ The best approach for doing this is to consider all polynomials of lower degree 
 
 1. There are two irreducible polynomials in $$GF(2)$$ of degree 3:
 
-    + &nbsp; $$ 1+x+x^3 $$
+    + &nbsp; $$ x^3+x+1 $$
 
-    + &nbsp; $$ 1+x^2+x^3 $$
+    + &nbsp; $$ x^3+x^2+1 $$
 
 2. There are three irreducible polynomials in $$GF(2)$$ of degree 4:
 
-    + &nbsp; $$ 1+x+x^4 $$
+    + &nbsp; $$ x^4+x+1 $$
 
-    + &nbsp; $$ 1+x+x^2+x^3+x^4 $$
+    + &nbsp; $$ x^4+x^3+x^2+x+1 $$
 
-    + &nbsp; $$ 1+x^3+x^4 $$
+    + &nbsp; $$ x^4+x^3+1 $$
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
