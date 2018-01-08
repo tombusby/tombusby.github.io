@@ -67,5 +67,4 @@ The result of this calculation is therefore $$x^7 + x^2 + x$$. This answer can b
 
 {% endhighlight %}
 
-
 {% include _understanding-crypto/previous-and-next-exercise.html %}
