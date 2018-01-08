@@ -30,7 +30,7 @@ Multiplication in $$GF(2^4)$$: Compute $$A(x) + B(x)\,\mathrm{mod}\,P(x)$$ in $$
 
 *This solution is verified as correct by the official [Solutions for Odd-Numbered Questions](http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf) manual.*
 
-The influence of the reduction polynonomial choice is that different primitive polynomials will produce different results for any multiplications that require modulo reduction to bring them back into the field.
+The influence of the reduction polynonomial choice is that different irreducible polynomials will produce different results for any multiplications that require modulo reduction to bring them back into the field.
 
 1\. Since a naive multiplication would produce an order 5 polynomial, this must be reduced using the reduction polynomial. The naive multiplication produces this output:
 
@@ -50,7 +50,7 @@ x^3\, + x^2\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,
 \end{array}
 $$
 
-The effect of the reduction polynomial is that it would produce a different output given a different primitive polynomial.
+The effect of the reduction polynomial is that it would produce a different output given a different irreducible polynomial.
 
 The remainder of this division is $$ x^3 + x^2 $$. This answer can be verified as correct (assuming my code is correct) by placing the following python code in the \__main__ section of the script written for Ex4.3:
 
