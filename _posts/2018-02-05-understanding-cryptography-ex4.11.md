@@ -77,5 +77,5 @@ $$ = $$
 
 $$ (b_6 \oplus b_7)x^7 + (b_5 \oplus b_6)x^6 + (b_4 \oplus b_5)x^5 + (b_3 \oplus b_4 \oplus b_7)x^4 + \\
 (b_2 \oplus b_3 \oplus b_7)x^3 + (b_1 \oplus b_2)x^2 + (b_0 \oplus b_1 \oplus b_7)x + (b_0 \oplus b_7) $$
- 
+
 {% include _understanding-crypto/previous-and-next-exercise.html %}
