@@ -90,8 +90,8 @@ When multiplied together, these should produce an output of 1:
 
 {% highlight python %}
 mod = Mod2Polynomial([1, 1, 0, 1, 1, 0, 0, 0, 1])
-a = Mod2Polynomial([1, 0, 0, 0, 0, 0, 0, 0,])
-b = Mod2Polynomial([1, 0, 0, 0, 0, 0, 0, 0,])
+a = Mod2Polynomial([1, 0, 0, 0, 0, 0, 0, 0])
+b = Mod2Polynomial([1, 0, 0, 0, 0, 0, 0, 0])
 print (a * b) % mod
 {% endhighlight %}
 
