@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.13"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.15"
 description: "Derive RC Constants in AES Key Schedule"
 layout: post
 headerImage: false
@@ -13,13 +13,13 @@ blog: false
 author: tombusby
 category: understanding-crypto
 chapter: 4
-exercise: 13
+exercise: 15
 externalLink: false
 ---
 
 {% include _understanding-crypto/chapter-menu.html %}
 
-## Exercise 4.13
+## Exercise 4.15
 
 *Derive* the bit representation for the following round constants within the key schedule:
 
@@ -57,7 +57,7 @@ $$R[10] = x^5 + x^4 + x^2 + x = 00110110_2 = 36_{16} $$
 
 After 8 is where the reduction polynomial comes into play to bring the result back into the field.
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-04/ex4.15.py) which can calculate any number of RC constants:
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-04/ex4.15.py) which can calculate any number of RC constants (This uses the Mod2Polynomial class I created for another exercise):
 
 {% highlight python %}
 # coding: utf-8
