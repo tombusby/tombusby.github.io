@@ -54,7 +54,7 @@ IT IS NOT AN EASY TASK TO EXPLAIN EACH MOVEMENT AND ITS SIGNIFICANCE AND SOME MU
 
 3\. This was said by [Shoshin Nagamine](https://en.wikipedia.org/wiki/Sh%C5%8Dshin_Nagamine).
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter%2001/ex1.1.py) which can perform this frequency analysis attack:
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-01/ex1.1.py) which can perform this frequency analysis attack:
 
 {% highlight python %}
 import collections, re

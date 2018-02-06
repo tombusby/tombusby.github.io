@@ -27,7 +27,7 @@ Assume the IV and the key of Trivium each consist of 80 all-zero bits. Compute t
 
 *I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter%2002/ex2.12.py) which inplements Trivium:
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-02/ex2.12.py) which inplements Trivium:
 
 This script reveals that the first 70 bits of output are:
 

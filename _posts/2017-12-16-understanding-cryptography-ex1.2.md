@@ -42,7 +42,7 @@ IFWEALLUNITEWEWILLCAUSETHERIVERSTOSTAINTHEGREATWATERSWITHTHEIRBLOOD.
 
 2\. This was said by [Tecumseh](https://en.wikipedia.org/wiki/Tecumseh).
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter%2001/ex1.2.py) which can perform this frequency analysis attack:
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-01/ex1.2.py) which can perform this frequency analysis attack:
 
 {% highlight python %}
 import string, collections, re

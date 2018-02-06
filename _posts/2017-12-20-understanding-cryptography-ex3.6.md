@@ -69,7 +69,7 @@ This allows us to completely forget about $$D$$ when calculating which S-boxes a
 
 2\. It's not necessary to explicitly check what the effect of this bitflip is during decryption key-scheduling, since it must be the same in reverse. If it wasn't the S-boxes would receive different input during decryption than they do during encryption, and the cipher would not function.
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter%2003/ex3.6.py) which can calculate which S-boxes are affected:
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-03/ex3.6.py) which can calculate which S-boxes are affected:
 
 {% highlight python %}
 one_bit = 7 # off by one so that bit 28 doesn't become bit 0 - is corrected via a +1 when used.

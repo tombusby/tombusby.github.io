@@ -44,7 +44,7 @@ KASPAR HAUSER
 
 3\. [Kaspar Hauser](https://en.wikipedia.org/wiki/Kaspar_Hauser) was murdered by knife wound.
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter%2002/ex2.1.py) which can perform encryption and decryption with this system:
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-02/ex2.1.py) which can perform encryption and decryption with this system:
 
 {% highlight python %}
 def letter_to_number(c):

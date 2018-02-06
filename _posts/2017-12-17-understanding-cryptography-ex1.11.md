@@ -43,7 +43,7 @@ FIRSTTHESENTENCEANDTHENTHEEVIDENCESAIDTHEQUEEN
 2\. Lewis Carroll wrote this in one of his poems.
 
 
-I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter%2001/ex1.11.py) which can perform affine cipher encryptions/decryptions.
+I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-01/ex1.11.py) which can perform affine cipher encryptions/decryptions.
 
 {% highlight python %}
 def egcd(a, b):
