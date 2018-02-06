@@ -70,7 +70,7 @@ $$ 1.08 \times 10^{18}\,\mathsf{years} \times \frac{365}{2^i} = 1\,\mathsf{day} 
 We can rearrange this equation to make $$2^i$$ the only item on the left:
 
 <div style="text-align: center;">
-$$ 2^i = 1.08 \times 10^{18} \times 365\,\mathsf{days} $$
+$$ 2^i = 1.08 \times 10^{18}\,\mathsf{years} \times 365\,\mathsf{days} $$
 </div>
 
 The reveals a value of $$i$$ which is roughly $$68.42$$.
