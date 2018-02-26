@@ -83,7 +83,7 @@ $$ \mathrm{gcd}(1, 26) = 1 $$
 
 $$ \mathrm{gcd}(2, 26) = 2 $$
 
-$$ \mathrm{gcd}(3, 26) = 3 $$
+$$ \mathrm{gcd}(3, 26) = 1 $$
 
 $$ \mathrm{gcd}(4, 26) = 2 $$
 
