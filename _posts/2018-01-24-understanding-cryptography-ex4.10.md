@@ -53,7 +53,7 @@ Use this book to figure out how the input is processed in the first round (e.g.,
 
 ### Solution
 
-*I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+*Feedback kindly provided by Lisa Roy in the comment section has allowed me to correct some errors in earlier versions of this answer. Given that we have now converged upon a common answer, I can be reasonably sure of correctness.*
 
 *Note*: From now on the state is represented as a 4x4 grid of bytes expressed in hexadecimal. This makes other transformations easier to represent also. The ordering of the bytes within the grid is as follows:
 
@@ -227,17 +227,17 @@ All that's left to do after this is the KeyAddition layer for $$k_1 = W_4,...,W_
 <script type="math/tex">
 \begin{array}{|c|c|}
 \hline
-F4 & E9 & C2 & 6A \\ \hline
-BE & 60 & 8E & 4D \\ \hline
-B6 & 25 & 0F & ED \\ \hline
-6E & 52 & 4B & D3 \\ \hline
+F4 & 9B & 1F & 57 \\ \hline
+CC & 60 & 01 & 90 \\ \hline
+6B & AA & 0F & A2 \\ \hline
+53 & 8F & 04 & D3 \\ \hline
 \end{array}
 </script>
 </div>
 
-Therefore, the output of the first round of encryption is as follows:
+Therefore, the output of the first round of encryption is as follows (remembering to read it out column-wise):
 
-$$ F4BEB66EE9602552C28E0F4B6A4DEDD3_{16} $$
+$$ F4CC6B539B60AA8F1F010F045790A2D3_{16} $$
 
 2\. For the case that the input is all-zeroes, the state after the $$k_0$$ key addition will be as follows (only the first byte is different from part 1):
 
@@ -301,27 +301,27 @@ The first column of the state now has a different set of values than in part 1, 
 <script type="math/tex">
 \begin{array}{|c|c|}
 \hline
-DC & E9 & C2 & 6A \\ \hline
-AA & 60 & 8E & 4D \\ \hline
-A2 & 25 & 0F & ED \\ \hline
-52 & 52 & 4B & D3 \\ \hline
+F4 & 9B & 1F & 57 \\ \hline
+CC & 60 & 01 & 90 \\ \hline
+6B & AA & 0F & A2 \\ \hline
+53 & 8F & 04 & D3 \\ \hline
 \end{array}
 </script>
 </div>
 
-Therefore, the output of the first round of encryption is as follows:
+Therefore, the output of the first round of encryption is as follows (remembering to read it out column-wise):
 
-$$ DCAAA252E9602552C28E0F4B6A4DEDD3_{16} $$
+$$ DCD87F6F9B60AA8F1F010F045790A2D3_{16} $$
 
 3\. We can see how many output bits have been altered by XORing the two output values together. This produces:
 
-$$ 2814143C000000000000000000000000_{16} $$
+$$ 2814143c000000000000000000000000_{16} $$
 
 In this form, we can clearly see that only the first column is altered after the first round.
 
-$$ 2814143C_{16} = 101000000101000001010000111100_2 $$
+$$ 2814143c_{16} = 101000000101000001010000111100_2 $$
 
-The 1s in the binary above correspond to output bits which have changed. There are ten of them, so therefore the number of output bits which have changed due to a 1 bit change in input, in this instance, is 10 after the first round.
+The 1s in the binary above correspond to output bits which have changed. There are ten of them, so therefore the number of output bits which have changed due to a 1 bit change in input, in this instance, is 10 after the first round. The ShiftRows operations in further rounds will diffuse this effect to other columns.
 
 I wrote a [python script](https://github.com/tombusby/understanding-cryptography-exercises/blob/master/Chapter-04/ex4.10.py) which can perform the operations involved in computing an AES round:
 
@@ -355,7 +355,7 @@ def ByteSubstitution(state):
         0x8C, 0xA1, 0x89, 0x0D, 0xBF, 0xE6, 0x42, 0x68, 0x41, 0x99, 0x2D, 0x0F, 0xB0, 0x54, 0xBB, 0x16,
     ]
     # I had originally split it into two coordinates, but this is completely unnecessary for reasons that
-    # become clear once you give a few seconds though to it.
+    # become clear once you give a few seconds thought to it.
     return [[sbox[i] for i in row] for row in state]
 
 def ShiftRows(state):
@@ -416,14 +416,16 @@ def encryption_round(state, k1):
     return state
 
 if __name__ == "__main__":
+    # Credit to Lisa Roy for pointing out this matrix is filled column-wise.
     k1 = [
-        [0xA0, 0xFA, 0xFE, 0x17],
-        [0x88, 0x54, 0x2C, 0xB1],
-        [0x23, 0xA3, 0x39, 0x39],
-        [0x2A, 0x6C, 0x76, 0x05],
+        [0xA0, 0x88, 0x23, 0x2A],
+        [0xFA, 0x54, 0xA3, 0x6C],
+        [0xFE, 0x2C, 0x39, 0x76],
+        [0x17, 0xB1, 0x39, 0x05],
     ]
     state1 = [
-        [0x2A, 0x28, 0xAB, 0x09],
+        [0x2A, 0x28, 0xAB, 0x09], # Q1
+        # [0x2B, 0x28, 0xAB, 0x09], # Q2
         [0x7E, 0xAE, 0xF7, 0xCF],
         [0x15, 0xD2, 0x15, 0x4F],
         [0x16, 0xA6, 0x88, 0x3C],
