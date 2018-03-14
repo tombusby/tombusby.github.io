@@ -34,13 +34,13 @@ For the following, we assume AES with 192-bit key length. Furthermore, let us as
 
 $$ 10^5 \,\mathsf{ICs} \times 3 \times 10^7\,\mathsf{keys/second} = 3 \times 10^{12}\,\mathsf{keys/second} $$
 
-The size of the keyspace in this instance is $$ 2^{196} $$, meaning the average key search will need to do $$ 2^{196} \div 2 = 2^{195} $$ checks. As such, the time required for an average key search is as follows:
+The size of the keyspace in this instance is $$ 2^{192} $$, meaning the average key search will need to do $$ 2^{192} \div 2 = 2^{191} $$ checks. As such, the time required for an average key search is as follows:
 
-$$ 2^{195} \,\mathsf{keys} \div 3 \times 10^{12}\,\mathsf{keys/second} \approx 1.674 \times 10^{46} \,\mathsf{seconds} $$
+$$ 2^{191} \,\mathsf{keys} \div 3 \times 10^{12}\,\mathsf{keys/second} \approx 1.046 \times 10^{45} \,\mathsf{seconds} $$
 
 We can calculate what this value is in years:
 
-$$ \frac{1.674 \times 10^{46} \,\mathsf{seconds}}{60 \times 60 \times 24 \times 365.25} \approx 5.304 \times 10^{38} \,\mathsf{years} $$
+$$ \frac{1.046 \times 10^{45} \,\mathsf{seconds}}{60 \times 60 \times 24 \times 365.25} \approx 3.315 \times 10^{37} \,\mathsf{years} $$
 
 This is approximately $$10^{28}$$ times the current elapsed age of the universe.
 
@@ -52,10 +52,10 @@ We can rearrange this equation to make $$2^i$$ the only item on the left:
 
 $$ 2^i = 5.304 \times 10^{38}\,\mathsf{years} \times 365.25\,\mathsf{days} $$
 
-The reveals a value of $$i$$ which is roughly $$137.153$$.
+The reveals a value of $$i$$ which is roughly $$133.153$$.
 
-Rounding the number of iterations to 137 allows us to calculate the number of years:
+Rounding the number of iterations to 134 allows us to calculate the number of years:
 
-$$ 1.5\,\mathsf{years} \times 137\,\mathsf{iterations} = 205.5\,\mathsf{years} $$
+$$ 1.5\,\mathsf{years} \times 134\,\mathsf{iterations} = 201\,\mathsf{years} $$
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
