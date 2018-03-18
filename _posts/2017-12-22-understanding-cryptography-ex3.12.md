@@ -21,7 +21,7 @@ externalLink: false
 
 ## Exercise 3.12
 
-We study a real-world case in this problem. A commercial file encryption program from the early 1990s used standard DES with 56 key bits. In those days, performing an exhaustive key search was considerably harder than nowadays, and thus the key length was sufficient for some applications. Unfortunately, the implementation of the key generation was flawed, which we are going to analyze. Assume that we can test 106 keys per second on a conventional PC.
+We study a real-world case in this problem. A commercial file encryption program from the early 1990s used standard DES with 56 key bits. In those days, performing an exhaustive key search was considerably harder than nowadays, and thus the key length was sufficient for some applications. Unfortunately, the implementation of the key generation was flawed, which we are going to analyze. Assume that we can test $$10^6$$ keys per second on a conventional PC.
 
 The key is generated from a password consisting of 8 characters. The key is a simple concatenation of the 8 ASCII characters, yielding 64 = 8 · 8 key bits. With the permutation PC−1 in the key schedule, the least significant bit (LSB) of each 8-bit character is ignored, yielding 56 key bits.
 
@@ -39,9 +39,9 @@ $$ 7 \text{ bits/character} \times 8 \text{ characters} = 56 \text{ bits} $$
 
 If we were to perform an exhaustive search, the average amount of keys to be checked is $$ 2^{56} \div 2 = 2^{55} $$.
 
-$$ 3.46 \times 10^{14} \text{ seconds} = \frac{2^{55} \text{ keys}}{104 \text{ keys/second}} $$
+$$ 3.6028 \times 10^{10} \text{ seconds} = \frac{2^{55} \text{ keys}}{10^6 \text{ keys/second}} $$
 
-This comes out to 4,009,615,052.86 days, or 10,977,727.73 years.
+This comes out to 416,999.97 days, or 1,141.68 years.
 
 2\. If the 8 characters are 7-bit ASCII characters, then the key length will be 6 bits per character (since DES will dispose of the least significant bit, and the most significant is always 0):
 
@@ -49,9 +49,9 @@ $$ 6 \text{ bits/character} \times 8 \text{ characters} = 48 \text{ bits} $$
 
 If we were to perform an exhaustive search, the average amount of keys to be checked is $$ 2^{48} \div 2 = 2^{47} $$.
 
-$$ 1.35 \times 10^{12} \text{ seconds} = \frac{2^{47} \text{ keys}}{104 \text{ keys/second}} $$
+$$ 1.4074 \times 10^8 \text{ seconds} = \frac{2^{47} \text{ keys}}{10^6 \text{ keys/second}} $$
 
-This comes out to 15,662,558.8 days, or 42,881.75 years.
+This comes out to 1,628.9 days, or 4.46 years.
 
 3\. If the key-generation phrase is restricted to upper-case ASCII letters, then size of the keyspace is:
 
@@ -61,8 +61,10 @@ $$ \log_2 208 \text{ keys} \approx 7.7 \text{ bits} $$
 
 If we were to perform an exhaustive search, the average amount of keys to be checked is $$ 208 \div 2 = 104 $$.
 
-$$ 1 \text{ second} = \frac{104 \text{ keys}}{104 \text{ keys/second}} $$
+$$ 0.000104 \text{ seconds} = \frac{104 \text{ keys}}{10^6 \text{ keys/second}} $$
 
-The entire keyspace can be search in 1 second because the keyspace was so thoroughly reduced by the flawed generation procedure.
+The entire keyspace can be search in a fraction of a second because the keyspace was so thoroughly reduced by the flawed generation procedure.
+
+In fact, the situation is even worse than this since DES throws away the least significant bit (as mentioned in question 2). This means that the keyspace (and the search time) is approximately halved again.
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
