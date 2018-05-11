@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex5.1"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.4"
 description: "Why Keeping the IV Secret Does not Increase Security for Ciphers in OFB Mode"
 layout: post
 headerImage: false

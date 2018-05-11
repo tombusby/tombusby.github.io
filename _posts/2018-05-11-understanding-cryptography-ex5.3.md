@@ -1,5 +1,5 @@
 ---
-title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex5.1"
+title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.3"
 description: "Discussion of Deriving the IV of a Cipher in CBC Mode where Key is Known"
 layout: post
 headerImage: false
