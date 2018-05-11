@@ -52,17 +52,9 @@ We can then calculate what length key in bits this is equivalent to:
 $$ \log_2 208827064576 \approx 37.6035177451\,\mathsf{bits} $$
 </div>
 
-4\. In order to calculate what password length corresponds to 128 bits, we need to work out what power of the number of characters corresponds to $$2^{128}$$.
+4\. In order to calculate what password length corresponds to 128 bits, we need to work out what power of the number of possible characters corresponds to $$2^{128}$$.
 
-a)
-
-<div style="text-align: center;">
-$$ 26^i = 2^{128} \\ i = \log_{26}\,2^{128} \\ i \approx 27.231\,\mathsf{lower\,case\,letters} $$
-</div>
-
-b)
-
-We could calculate this in the same way, but since 128 is also a power of 2, the equations can be understood in a simpler way, where $$i$$ is the character length required to create the equivalent of a $$2^{128}$$ bit key:
+a) Since 128 is also a power of 2, the equations can be understood in a simple way, where $$i$$ is the character length required to create the equivalent of a $$2^{128}$$ bit key:
 
 <div style="text-align: center;">
 $$ 128^i = 2^{7i} = 2^{128} $$
@@ -73,5 +65,12 @@ If we take the powers of two and do $$\log_2$$ on both sides, we can solve this 
 <div style="text-align: center;">
 $$ 7i = 128 \\ i = 128 \div 7 \\ i \approx 18.285\,\mathsf{ASCII\,characters} $$
 </div>
+
+b) This isn't as trivially solved, since 26 can't be cleanly represented as a power of 2. However, the equations are still fairly simple:
+
+<div style="text-align: center;">
+$$ 26^i = 2^{128} \\ i = \log_{26}\,2^{128} \\ i \approx 27.231\,\mathsf{lower\,case\,letters} $$
+</div>
+
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
