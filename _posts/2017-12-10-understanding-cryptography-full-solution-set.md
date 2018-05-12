@@ -18,7 +18,7 @@ externalLink: false
 ## Useful links
 
 + [Official Website for "Understanding Cryptography" - crypto-textbook.com](http://www.crypto-textbook.com/)
-+ [Set of University Lecture Series Covering the Material from the Book](https://www.youtube.com/channel/UC1usFRN4LCMcfIV7UjHNuQg/videos) - taught by Christof Paar
++ [University Lecture Series Covering the Material from the Book](https://www.youtube.com/channel/UC1usFRN4LCMcfIV7UjHNuQg/videos) - taught by Christof Paar
 + Problem sets from the book:
   + [Chapter 1](http://wiki.crypto.rub.de/Buch/en/download/problems_only/problems_chaptr_1.pdf)
   + [Chapter 2](http://wiki.crypto.rub.de/Buch/en/download/problems_only/problems_chaptr_2.pdf)
