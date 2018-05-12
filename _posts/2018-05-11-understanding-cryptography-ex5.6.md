@@ -31,6 +31,6 @@ Below is an OFB scheme which matches the requirements:
 
 ![OFB Scheme]({{ site.url }}/assets/images/understanding-crypto/ex5-6-OFB-mode-scheme.png){: .image-center}
 
-*Note the places where 128 bits are truncated to 8 bits. This is done by taking the first 8 bits*
+*Note*: In places where 128 bits are truncated to 8 bits, this is done by taking the first 8 bits.
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
