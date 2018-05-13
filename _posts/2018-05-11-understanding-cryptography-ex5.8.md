@@ -1,6 +1,6 @@
 ---
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.8"
-description: "Designing an OFB Mode Scheme for Byte Encryption (again?)"
+description: "Designing a CFB Mode Scheme for Byte Encryption"
 layout: post
 headerImage: false
 projects: false
@@ -25,6 +25,8 @@ In the text, a variant of the CFB mode is proposed which encrypts individual byt
 
 ### Solution
 
-*I'm not really sure what this "variant of the CFB mode" that's "[i]n the text" actually refers to, so I'm not able to answer this question. If anyone has any input that could shed light on what this question is asking for, please share. To me, it appears to be a duplicate of what was requested for [Ex 5.6](/understanding-cryptography-ex5.6/).*
+*I haven't yet verified this solution independently. If you spot any mistakes, please leave a comment in the Disqus box at the bottom of the page.*
+
+*I haven't had the time to produce the diagram yet, so I will fill this in later.*
 
 {% include _understanding-crypto/previous-and-next-exercise.html %}
