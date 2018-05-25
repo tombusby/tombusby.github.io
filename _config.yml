@@ -16,7 +16,7 @@ resume: false
 resume-external:
 resume-url:
 
-url: http://tom.busby.ninja
+url: https://tom.busby.ninja
 
 permalink: /:title/
 
