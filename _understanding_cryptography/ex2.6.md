@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.6"
 description: "Chosen Plaintext Attacks Against Stream Ciphers with Short Periods"
 layout: post
+redirect_from: /understanding-cryptography-ex2.6/
 headerImage: false
 projects: false
 date: 2017-12-18 20:56

@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.4"
 description: "Password Length and Key Sizes in Bits"
 layout: post
+redirect_from: /understanding-cryptography-ex1.4/
 headerImage: false
 projects: false
 date: 2017-12-16 22:43

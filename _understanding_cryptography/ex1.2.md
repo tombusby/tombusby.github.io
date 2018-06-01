@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.2"
 description: "Breaking a Caesar/Shift Cipher by Frequency Analysis"
 layout: post
+redirect_from: /understanding-cryptography-ex1.2/
 headerImage: false
 projects: false
 date: 2017-12-16 22:40

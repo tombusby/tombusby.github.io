@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.6"
 description: "Calculating a Division in GF(2⁸) and Reducing via the AES Irreducible Polynomial"
 layout: post
+redirect_from: /understanding-cryptography-ex4.6/
 headerImage: false
 projects: false
 date: 2017-12-31 14:19

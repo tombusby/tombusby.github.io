@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.14"
 description: "Proving that Double Encryption with the Affine Cipher is Equivalent to Single Encryption"
 layout: post
+redirect_from: /understanding-cryptography-ex1.14/
 headerImage: false
 projects: false
 date: 2017-12-17 16:29

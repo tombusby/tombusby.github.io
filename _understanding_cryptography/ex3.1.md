@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.1"
 description: "Verifying the Non-Linearity of the DES S-boxes"
 layout: post
+redirect_from: /understanding-cryptography-ex3.1/
 headerImage: false
 projects: false
 date: 2017-12-19 20:47

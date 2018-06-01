@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.9"
 description: "Calculating the Output of the First Round of AES Encryption with All 1s"
 layout: post
+redirect_from: /understanding-cryptography-ex4.9/
 headerImage: false
 projects: false
 date: 2018-01-08 23:47

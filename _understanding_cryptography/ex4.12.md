@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.12"
 description: "Calculating the Number of XOR Gates Required for AES Diffusion"
 layout: post
+redirect_from: /understanding-cryptography-ex4.12/
 headerImage: false
 projects: false
 date: 2018-02-05 17:45

@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.5"
 description: "The Problems of IV Reuse with Ciphers in OFB Mode"
 layout: post
+redirect_from: /understanding-cryptography-ex5.5/
 headerImage: false
 projects: false
 date: 2018-05-11 16:37

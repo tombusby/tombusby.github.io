@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.10"
 description: "Performing a Chosen Plaintext Attack to Break an LFSR and Reveal its Feedback Coefficients"
 layout: post
+redirect_from: /understanding-cryptography-ex2.10/
 headerImage: false
 projects: false
 date: 2017-12-19 18:10

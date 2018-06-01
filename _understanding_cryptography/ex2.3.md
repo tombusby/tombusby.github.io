@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.3"
 description: "The Dangers of Key Reuse with One Time Pads (OTPs)"
 layout: post
+redirect_from: /understanding-cryptography-ex2.3/
 headerImage: false
 projects: false
 date: 2017-12-18 18:15

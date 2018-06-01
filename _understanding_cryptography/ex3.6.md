@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.6"
 description: "Demonstrating the Avalanche Effect of a 1-bit Key Change in DES"
 layout: post
+redirect_from: /understanding-cryptography-ex3.6/
 headerImage: false
 projects: false
 date: 2017-12-20 00:45

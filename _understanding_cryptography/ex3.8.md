@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.8"
 description: "Proving that When the DES Key and Input are Bitwise Inverted, So is the Output"
 layout: post
+redirect_from: /understanding-cryptography-ex3.8/
 headerImage: false
 projects: false
 date: 2017-12-20 12:34

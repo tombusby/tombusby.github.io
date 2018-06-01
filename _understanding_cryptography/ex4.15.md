@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.15"
 description: "Derive RC Constants in AES Key Schedule"
 layout: post
+redirect_from: /understanding-cryptography-ex4.15/
 headerImage: false
 projects: false
 date: 2018-02-06 15:18

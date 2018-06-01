@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.1"
 description: "Developing a Stream Cipher which Operates on the Latin Alphabet"
 layout: post
+redirect_from: /understanding-cryptography-ex2.1/
 headerImage: false
 projects: false
 date: 2017-12-17 18:00

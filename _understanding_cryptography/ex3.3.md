@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.3"
 description: "Calculating the Output of the First Round of DES Encryption with All 0s"
 layout: post
+redirect_from: /understanding-cryptography-ex3.3/
 headerImage: false
 projects: false
 date: 2017-12-19 21:25

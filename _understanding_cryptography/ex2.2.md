@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.2"
 description: "Discussion of Key Management Issues with One Time Pads (OTPs)"
 layout: post
+redirect_from: /understanding-cryptography-ex2.2/
 headerImage: false
 projects: false
 date: 2017-12-18 18:00

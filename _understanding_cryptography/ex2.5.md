@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.5"
 description: "Calculating the Output and State of Linear Feedback Shift Registers (LFSRs)"
 layout: post
+redirect_from: /understanding-cryptography-ex2.5/
 headerImage: false
 projects: false
 date: 2017-12-18 19:10

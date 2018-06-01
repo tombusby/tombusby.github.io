@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.1"
 description: "Breaking a Substitution Cipher by Frequency Analysis"
 layout: post
+redirect_from: /understanding-cryptography-ex1.1/
 headerImage: false
 projects: false
 date: 2017-12-16 22:39

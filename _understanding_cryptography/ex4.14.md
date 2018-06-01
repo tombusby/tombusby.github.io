@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.14"
 description: "Calculating the AES S-box for Certain Values Using the Affine Mapping"
 layout: post
+redirect_from: /understanding-cryptography-ex4.14/
 headerImage: false
 projects: false
 date: 2018-02-05 19:56

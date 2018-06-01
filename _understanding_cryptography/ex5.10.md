@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.10"
 description: "Propagation of Errors in Various Block Cipher Modes of Operation"
 layout: post
+redirect_from: /understanding-cryptography-ex5.10/
 headerImage: false
 projects: false
 date: 2018-05-13 17:20

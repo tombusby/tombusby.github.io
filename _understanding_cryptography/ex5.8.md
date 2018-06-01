@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.8"
 description: "Designing a CFB Mode Scheme for Byte Encryption"
 layout: post
+redirect_from: /understanding-cryptography-ex5.8/
 headerImage: false
 projects: false
 date: 2018-05-12 21:24

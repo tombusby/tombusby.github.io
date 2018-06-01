@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.2"
 description: "Comparison of Brute-force Costs for Ciphers in ECB or CBC Modes"
 layout: post
+redirect_from: /understanding-cryptography-ex5.2/
 headerImage: false
 projects: false
 date: 2018-03-25 20:55

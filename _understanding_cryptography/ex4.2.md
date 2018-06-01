@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.2"
 description: "Computing Addition and Multiplication Tables in Galois Prime Fields"
 layout: post
+redirect_from: /understanding-cryptography-ex4.2/
 headerImage: false
 projects: false
 date: 2017-12-23 21:25

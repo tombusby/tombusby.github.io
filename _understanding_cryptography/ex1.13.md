@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.13"
 description: "Breaking the Affine Cipher with a Chosen Plaintext Attack"
 layout: post
+redirect_from: /understanding-cryptography-ex1.13/
 headerImage: false
 projects: false
 date: 2017-12-17 15:39

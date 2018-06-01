@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.9"
 description: "Discussion of Attacks Against LFSRs"
 layout: post
+redirect_from: /understanding-cryptography-ex2.9/
 headerImage: false
 projects: false
 date: 2017-12-19 00:08

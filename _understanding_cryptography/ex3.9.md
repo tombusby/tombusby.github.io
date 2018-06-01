@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.9"
 description: "Discussion of Number of Key Checks Required to Brute-Force a DES Key from a Chosen Plaintext"
 layout: post
+redirect_from: /understanding-cryptography-ex3.9/
 headerImage: false
 projects: false
 date: 2017-12-21 21:48

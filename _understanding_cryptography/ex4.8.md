@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.8"
 description: "Finding Irreducible Polynomials in GF(2)"
 layout: post
+redirect_from: /understanding-cryptography-ex4.8/
 headerImage: false
 projects: false
 date: 2018-01-08 23:08

@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.11"
 description: "Deriving Equations for the Constant Multiplications Done in the MixColumn GF Computations"
 layout: post
+redirect_from: /understanding-cryptography-ex4.11/
 headerImage: false
 projects: false
 date: 2018-02-05 00:28

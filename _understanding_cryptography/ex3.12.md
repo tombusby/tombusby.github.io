@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.12"
 description: "Calculating Equivalent Key Lengths for DES Keys With Flawed Generation Procedures"
 layout: post
+redirect_from: /understanding-cryptography-ex3.12/
 headerImage: false
 projects: false
 date: 2017-12-22 01:11

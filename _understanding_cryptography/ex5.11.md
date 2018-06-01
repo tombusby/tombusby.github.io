@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.11"
 description: "Reestablishing Synchronisation and Correctness in the Case of Bit Insertion/Deletion during Transmission"
 layout: post
+redirect_from: /understanding-cryptography-ex5.11/
 headerImage: false
 projects: false
 date: 2018-05-13 20:35

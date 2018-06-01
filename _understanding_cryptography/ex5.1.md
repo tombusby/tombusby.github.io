@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.1"
 description: "Selecting the Appropriate Mode of Operation for a Block Cipher in a Specific Use-Case"
 layout: post
+redirect_from: /understanding-cryptography-ex5.1/
 headerImage: false
 projects: false
 date: 2018-03-25 20:40

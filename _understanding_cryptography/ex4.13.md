@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.13"
 description: "Checking Multiplicative Inverses in GF(2⁸)"
 layout: post
+redirect_from: /understanding-cryptography-ex4.13/
 headerImage: false
 projects: false
 date: 2018-02-05 19:09

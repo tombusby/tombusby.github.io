@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.1"
 description: "The AES Development Process and How that Differed from DES"
 layout: post
+redirect_from: /understanding-cryptography-ex4.1/
 headerImage: false
 projects: false
 date: 2017-12-23 18:35

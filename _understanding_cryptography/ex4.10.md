@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.10"
 description: "Calculating the State After One Round for AES"
 layout: post
+redirect_from: /understanding-cryptography-ex4.10/
 headerImage: false
 projects: false
 date: 2018-01-24 23:28

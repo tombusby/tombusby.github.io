@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.16"
 description: "Calculating the Length of Brute-Force Attacks against AES"
 layout: post
+redirect_from: /understanding-cryptography-ex4.16/
 headerImage: false
 projects: false
 date: 2018-02-06 16:41

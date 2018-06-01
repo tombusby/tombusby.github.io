@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.9"
 description: "Discussion of the Number of IV Bits Available in AES CTR (Counter) Mode for 1TB of Plaintext"
 layout: post
+redirect_from: /understanding-cryptography-ex5.9/
 headerImage: false
 projects: false
 date: 2018-05-13 15:41

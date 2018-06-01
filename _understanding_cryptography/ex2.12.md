@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.12"
 description: "Calculating the First 70 Bits of Output During Trivium's Warm-up Phase"
 layout: post
+redirect_from: /understanding-cryptography-ex2.12/
 headerImage: false
 projects: false
 date: 2017-12-19 19:14

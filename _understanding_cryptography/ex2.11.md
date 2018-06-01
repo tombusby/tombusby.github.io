@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 2 Solutions - Ex2.11"
 description: "Performing Another Chosen Plaintext Attack to Break an LFSR and Reveal the Full Plaintext"
 layout: post
+redirect_from: /understanding-cryptography-ex2.11/
 headerImage: false
 projects: false
 date: 2017-12-19 19:14

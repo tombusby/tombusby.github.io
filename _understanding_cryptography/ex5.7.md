@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.7"
 description: "Weakening an OFB Mode Scheme by Truncating the Feedback Bytes"
 layout: post
+redirect_from: /understanding-cryptography-ex5.7/
 headerImage: false
 projects: false
 date: 2018-05-12 20:40

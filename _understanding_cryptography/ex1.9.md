@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.9"
 description: "Computing Large Exponents in Finite Sets"
 layout: post
+redirect_from: /understanding-cryptography-ex1.9/
 headerImage: false
 projects: false
 date: 2017-12-16 22:48

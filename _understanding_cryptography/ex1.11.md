@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.11"
 description: "Decrypting with the Affine Cipher"
 layout: post
+redirect_from: /understanding-cryptography-ex1.11/
 headerImage: false
 projects: false
 date: 2017-12-17 01:50

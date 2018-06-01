@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 5 Solutions - Ex5.12"
 description: "Calculating the Length of Brute-Force Attacks against 2DES with \"Meet in the Middle\" Attack"
 layout: post
+redirect_from: /understanding-cryptography-ex5.12/
 headerImage: false
 projects: false
 date: 2018-05-13 21:36

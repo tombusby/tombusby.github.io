@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.10"
 description: "Computing Euler's Phi Function"
 layout: post
+redirect_from: /understanding-cryptography-ex1.10/
 headerImage: false
 projects: false
 date: 2017-12-17 00:49

@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 1 Solutions - Ex1.5"
 description: "Multiplication in Finite Sets"
 layout: post
+redirect_from: /understanding-cryptography-ex1.5/
 headerImage: false
 projects: false
 date: 2017-12-16 22:44

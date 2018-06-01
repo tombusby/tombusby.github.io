@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.7"
 description: "Finding Multiplicative Inverses in GF(2⁴)"
 layout: post
+redirect_from: /understanding-cryptography-ex4.7/
 headerImage: false
 projects: false
 date: 2018-01-07 23:34

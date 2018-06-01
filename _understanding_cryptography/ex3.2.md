@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.2"
 description: "Veryifying that IP and IP-1 are Each Other's Inverse"
 layout: post
+redirect_from: /understanding-cryptography-ex3.2/
 headerImage: false
 projects: false
 date: 2017-12-19 20:47

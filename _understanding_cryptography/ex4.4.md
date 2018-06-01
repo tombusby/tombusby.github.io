@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.4"
 description: "Performing Addition and Reduction in GF(2⁴)"
 layout: post
+redirect_from: /understanding-cryptography-ex4.4/
 headerImage: false
 projects: false
 date: 2017-12-31 00:45

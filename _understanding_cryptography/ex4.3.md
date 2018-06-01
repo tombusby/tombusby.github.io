@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 4 Solutions - Ex4.3"
 description: "Computing Addition and Multiplication Tables in Galois Extension Fields"
 layout: post
+redirect_from: /understanding-cryptography-ex4.3/
 headerImage: false
 projects: false
 date: 2017-12-23 22:11

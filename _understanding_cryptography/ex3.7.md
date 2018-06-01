@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.7"
 description: "Discussion of What Constitutes a \"Weak Key\" in DES"
 layout: post
+redirect_from: /understanding-cryptography-ex3.7/
 headerImage: false
 projects: false
 date: 2017-12-20 02:03

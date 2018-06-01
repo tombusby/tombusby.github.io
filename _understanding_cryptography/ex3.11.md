@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.11"
 description: "Using COPACOBANA to Brute-Force DES Keys"
 layout: post
+redirect_from: /understanding-cryptography-ex3.11/
 headerImage: false
 projects: false
 date: 2017-12-21 23:33

@@ -2,6 +2,7 @@
 title: "Understanding Cryptography by Christof Paar and Jan Pelzl - Chapter 3 Solutions - Ex3.13"
 description: "Calculating the State After Round 1 for the PRESENT-80 Block Cipher"
 layout: post
+redirect_from: /understanding-cryptography-ex3.13/
 headerImage: false
 projects: false
 date: 2017-12-22 01:11
