@@ -48,41 +48,41 @@ As such, I have decided to create a comprehensive solution set to all problems i
 <ul>
   <li>Chapter 1 - Introduction to Cryptography and Data Security</li>
   <ul>
-    {% for post in site.posts reversed %}
-        {% if post.category == 'understanding-crypto' and post.chapter == 1 %}
-          <li>Ex {{ post.chapter }}.{{ post.exercise }} - <a href="{{ post.url }}">{{ post.description }}</a></li>
+    {% for exercise in site.understanding_cryptography %}
+        {% if exercise.category == 'understanding-crypto' and exercise.chapter == 1 %}
+          <li>Ex {{ exercise.chapter }}.{{ exercise.exercise }} - <a href="{{ exercise.url }}">{{ exercise.description }}</a></li>
         {% endif %}
     {% endfor %}
   </ul>
   <li>Chapter 2 - Stream Ciphers</li>
   <ul>
-    {% for post in site.posts reversed %}
-        {% if post.category == 'understanding-crypto' and post.chapter == 2 %}
-          <li>Ex {{ post.chapter }}.{{ post.exercise }} - <a href="{{ post.url }}">{{ post.description }}</a></li>
+    {% for exercise in site.understanding_cryptography %}
+        {% if exercise.category == 'understanding-crypto' and exercise.chapter == 2 %}
+          <li>Ex {{ exercise.chapter }}.{{ exercise.exercise }} - <a href="{{ exercise.url }}">{{ exercise.description }}</a></li>
         {% endif %}
     {% endfor %}
   </ul>
   <li>Chapter 3 - The Data Encryption Standard (DES) and Alternatives</li>
   <ul>
-    {% for post in site.posts reversed %}
-        {% if post.category == 'understanding-crypto' and post.chapter == 3 %}
-          <li>Ex {{ post.chapter }}.{{ post.exercise }} - <a href="{{ post.url }}">{{ post.description }}</a></li>
+    {% for exercise in site.understanding_cryptography %}
+        {% if exercise.category == 'understanding-crypto' and exercise.chapter == 3 %}
+          <li>Ex {{ exercise.chapter }}.{{ exercise.exercise }} - <a href="{{ exercise.url }}">{{ exercise.description }}</a></li>
         {% endif %}
     {% endfor %}
   </ul>
   <li>Chapter 4 - The Advanced Encryption Standard (AES)</li>
   <ul>
-    {% for post in site.posts reversed %}
-        {% if post.category == 'understanding-crypto' and post.chapter == 4 %}
-          <li>Ex {{ post.chapter }}.{{ post.exercise }} - <a href="{{ post.url }}">{{ post.description }}</a></li>
+    {% for exercise in site.understanding_cryptography %}
+        {% if exercise.category == 'understanding-crypto' and exercise.chapter == 4 %}
+          <li>Ex {{ exercise.chapter }}.{{ exercise.exercise }} - <a href="{{ exercise.url }}">{{ exercise.description }}</a></li>
         {% endif %}
     {% endfor %}
   </ul>
   <li>Chapter 5 - More about Block Ciphers</li>
   <ul>
-    {% for post in site.posts reversed %}
-        {% if post.category == 'understanding-crypto' and post.chapter == 5 %}
-          <li>Ex {{ post.chapter }}.{{ post.exercise }} - <a href="{{ post.url }}">{{ post.description }}</a></li>
+    {% for exercise in site.understanding_cryptography %}
+        {% if exercise.category == 'understanding-crypto' and exercise.chapter == 5 %}
+          <li>Ex {{ exercise.chapter }}.{{ exercise.exercise }} - <a href="{{ exercise.url }}">{{ exercise.description }}</a></li>
         {% endif %}
     {% endfor %}
   </ul>
