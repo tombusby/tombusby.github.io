@@ -3,18 +3,14 @@
 
 <div class="pagination">
 
-    {% if page.first_exercise %}
-        <span>Previous Exercise</span>
-    {% else %}
+    {% if page.previous %}
         <a href="{{ page.previous.url }}" class="previous">Previous Exercise</a>
+    {% else %}
+        <span>Previous Exercise</span>
     {% endif %}
 
     {% if page.next %}
-        {% if page.last_exercise %}
-            <span>Next Exercise</span>
-        {% else %}
-            <a href="{{ page.next.url }}" class="previous">Next Exercise</a>
-        {% endif %}
+        <a href="{{ page.next.url }}" class="previous">Next Exercise</a>
     {% else %}
         <span>Next Exercise</span>
     {% endif %}

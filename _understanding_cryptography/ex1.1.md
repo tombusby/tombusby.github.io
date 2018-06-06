@@ -15,7 +15,6 @@ author: tombusby
 category: understanding-crypto
 chapter: 1
 exercise: 1
-first_exercise: true
 externalLink: false
 ---
 
