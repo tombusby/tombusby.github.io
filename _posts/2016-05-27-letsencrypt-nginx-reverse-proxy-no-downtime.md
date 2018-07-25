@@ -2,6 +2,7 @@
 title: "Let's Encrypt Auto-Renewal for Nginx Reverse Proxies"
 description: "A tutorial for setting up nginx reverse proxies with Let's Encrypt SSL certs without downtime."
 layout: post
+redirect_from: /letsecnrypt-nginx-reverse-proxy-no-downtime/
 headerImage: false
 projects: false
 date: 2016-05-27 11:03
