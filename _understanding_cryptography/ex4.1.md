@@ -34,7 +34,7 @@ Since May 26, 2002, the AES (Advanced Encryption Standard) describes the officia
 
 *This solution is verified as correct by the official [Solutions for Odd-Numbered Questions](http://wiki.crypto.rub.de/Buch/en/download/Understanding_Cryptography_Odd_Solutions.pdf) manual.*
 
-1\. Unlike DES, AES was now developed in secret. It was developed via a public competition by NIST. Some of the design criteria of DES (the S-boxes in particlar) were kept secret from the public to defend against cryptographic attacks which were as yet unpublished and only known to the NSA. AES was developed by allowing a public acadamic evaluation of the algorithm candidates.
+1\. Unlike DES, AES was not developed in secret. It was developed via a public competition by NIST. Some of the design criteria of DES (the S-boxes in particlar) were kept secret from the public to defend against cryptographic attacks which were as yet unpublished and only known to the NSA. AES was developed by allowing a public acadamic evaluation of the algorithm candidates.
 
 This appears to be the beginning of the modern consensus that an open design process produces the most secure algorithms.
 
