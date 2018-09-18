@@ -25,7 +25,7 @@ externalLink: false
 This problem deals with the affine cipher with the key parameters a = 7, b = 22.
 
 <pre class="pre-wrap-enabled">
-xultpaajcxitltlxaarpjhtiwtgxktghidhipxciwtvgtpilpitghlxiwiwtxgqadds.
+falszztysyjzyjkywjrztyjztyynaryjkyswarztyegyyj
 </pre>
 
 1. Decrypt the text above.
